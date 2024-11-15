@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+    <title>Rent</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="text-xl font-semibold text-indigo-600">
+            <a href="#">Logo</a>
+          </div>
+  
+          <!-- Navigation Menu -->
+          <nav class="hidden md:flex space-x-8">
+            <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
+            <a href="#features" class="text-gray-700 hover:text-indigo-600 transition duration-300">Features</a>
+            <a href="#gallery" class="text-gray-700 hover:text-indigo-600 transition duration-300">Gallery</a>
+            <a href="#location" class="text-gray-700 hover:text-indigo-600 transition duration-300">Location</a>
+            <a href="#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
+          </nav>
+  
+          <!-- Call to Action Button (Schedule a Visit) -->
+          <div class="hidden md:block">
+            <a href="#contact" class="bg-indigo-600 text-white py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Schedule a Visit</a>
+          </div>
+  
+          <!-- Mobile Menu (Hamburger) -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-button" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+  
+        <!-- Mobile Menu - Modal -->
+        <div id="menu-mobile" class="md:hidden mt-4 hidden space-y-4 bg-white p-6 rounded-lg shadow-lg">
+          <a href="#about" class="block text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
+          <a href="#features" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Features</a>
+          <a href="#gallery" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Gallery</a>
+          <a href="#location" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Location</a>
+          <a href="#contact" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
+          <div class="mt-6">
+            <a href="#contact" class="block bg-indigo-600 text-white py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Schedule a Visit</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+ <!-- Hero Section -->
+ <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://example.com/your-image.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for contrast -->
+    
+    <div class="container mx-auto h-full flex flex-col justify-center text-center text-white px-6 sm:px-12">
+      <!-- Title -->
+      <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+        Discover Your Dream Complex
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-2xl mb-8 max-w-lg mx-auto opacity-90">
+        A modern, sustainable, and luxurious living experience, in the heart of the city.
+      </p>
+
+      <!-- Call to Action Buttons -->
+      <div class="flex justify-center gap-4">
+        <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105">
+          Learn More
+        </a>
+        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105">
+          Schedule a Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+     <!-- Script to Toggle Mobile Menu -->
+  <script>
+    const menuButton = document.getElementById("menu-button");
+    const menuMobile = document.getElementById("menu-mobile");
+
+    menuButton.addEventListener("click", () => {
+      menuMobile.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>
