@@ -4,433 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Complex</title>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- Link to Tailwind CSS -->
     <link rel="stylesheet" href="public/css/output.css">
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
- <!-- Bootstrap Icons CSS -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
- <!-- AOS CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-
-    <title>Rent</title>
+    <!-- Link to Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Custom style for images with object-cover */
+        .swiper-slide img {
+            object-fit: cover;
+            /* Make the image cover the entire area without distortion */
+            width: 100%;
+            /* Ensures the image takes up the full width */
+            height: 100%;
+            /* Ensures the image takes up the full height */
+            opacity: 0.5;
+            /* Image opacity */
+        }
+    </style>
 </head>
 
-<body class="overflow-x-hidden">
-    <!-- Header -->
-    <header class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
-      <div class="max-w-7xl mx-auto px-6 py-4">
-        <div class="flex justify-between items-center">
-          <!-- Logo -->
-         <!-- Logo -->
-<div class="text-xl font-semibold text-indigo-600" data-aos="fade-down" data-aos-duration="1000">
-    <a href="#">Logo</a>
-  </div>
-  
-  <!-- Navigation Menu -->
-  <nav class="hidden md:flex space-x-8" data-aos="fade-down" data-aos-duration="1500">
-    <a href="#main" class="text-gray-700 hover:text-indigo-600 transition duration-300">Home</a>
-    <a href="#detail1" class="text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
-    <a href="#detail2" class="text-gray-700 hover:text-indigo-600 transition duration-300">more</a>
-    <a href="#galery" class="text-gray-700 hover:text-indigo-600 transition duration-300">Gallery</a>
-    <a href="#location" class="text-gray-700 hover:text-indigo-600 transition duration-300">Location</a>
-    <a href="#footer" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
-  </nav>
-  
-  
-          <!-- Call to Action Button (Schedule a Visit) -->
-          <div class="hidden md:block" data-aos="fade-down" data-aos-duration="1500">
-            <a href="#visit" class="bg-indigo-600 text-white py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Schedule a Visit</a>
-          </div>
-  
-          <!-- Mobile Menu (Hamburger) -->
-          <div class="md:hidden flex items-center"data-aos="fade-down" data-aos-duration="1500">
-            <button id="menu-button" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-  
-        <!-- Mobile Menu - Modal -->
-        <div id="menu-mobile" class="md:hidden mt-4 hidden space-y-4 bg-white p-6 rounded-lg shadow-lg" data-aos="fade-down" data-aos-duration="1500">
-          <a href="#about" class="block text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
-          <a href="#features" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Features</a>
-          <a href="#gallery" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Gallery</a>
-          <a href="#location" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Location</a>
-          <a href="#contact" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Contact</a>
-          <div class="mt-6">
-            <a href="#contact" class="block bg-indigo-600 text-white py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Schedule a Visit</a>
-          </div>
-        </div>
-      </div>
-    </header>
+<body class="font-sans overflow-x-hidden">
 
-
- <!-- Hero Section -->
- <section id="main" class="relative h-screen">
-    <!-- Image with overlay -->
-    <img src="public/assets/img/image_1.jpeg" alt="Complexo" class="absolute inset-0 w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for contrast -->
-  
-    <!-- Content -->
-    <div class="container mx-auto h-full flex flex-col justify-center text-center text-white px-6 sm:px-12 z-10">
-      <!-- Title -->
-      <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg" data-aos="fade-up" data-aos-duration="1000">
-        Discover Your Dream Complex
-      </h1>
-      
-      <p class="text-lg sm:text-2xl mb-8 max-w-lg mx-auto opacity-90" data-aos="fade-up" data-aos-duration="1200">
-        A modern, sustainable, and luxurious living experience, in the heart of the city.
-      </p>
-      
-      <!-- Botões de Chamada -->
-      <div class="flex justify-center gap-4">
-        <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-duration="1500">
-          Learn More
-        </a>
-        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-duration="1500">
-          Schedule a Visit
-        </a>
-      </div>
-      
-    </div>
-  </section>
-
-
-  <section id="detail1" class="bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 text-white py-24" id="sobre">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <!-- Title -->
-      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate__animated animate__fadeInUp"data-aos="fade-up" data-aos-duration="1000">The Ponta do Ouro Complex</h2>
-      <p class="text-lg md:text-xl mb-8 leading-relaxed animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1200">
-        The Ponta do Ouro Complex is a place where comfort, privacy, and location come together. It offers 4 fully equipped T2 houses and 7 luxury suites, with a range of amenities to ensure the highest quality of life. Located next to the road and in the center of Ponta do Ouro, the project is perfect for those who wish to live here or for those looking to invest in a strategic and peaceful location.
-      </p>
-    
-      <!-- Highlights and Differentiators -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        <!-- Highlight 1 -->
-        <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
-          <img class="w-full h-48 object-cover rounded-lg mb-4" src="public/assets/img/image_1.jpeg" alt="24/7 Security">
-          <h3 class="text-2xl font-semibold text-indigo-700 mb-3">24/7 Security</h3>
-          <p class="text-gray-800">Fully enclosed with 24-hour security, providing peace of mind and protection for all residents.</p>
-        </div>
-        <!-- Highlight 2 -->
-        <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"data-aos="fade-up" data-aos-duration="1200">
-          <img class="w-full h-48 object-cover rounded-lg mb-4" src="public/assets/img/image_1.jpeg" alt="Sustainability">
-          <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Sustainability</h3>
-          <p class="text-gray-800">Equipped with sustainable systems, including a water borehole and energy-saving solutions, respecting the environment.</p>
-        </div>
-        <!-- Highlight 3 -->
-        <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"data-aos="fade-up" data-aos-duration="1200">
-          <img class="w-full h-48 object-cover rounded-lg mb-4" src="public/assets/img/image_1.jpeg" alt="Prime Location">
-          <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Prime Location</h3>
-          <p class="text-gray-800">In the heart of Ponta do Ouro, with easy access to all regional conveniences and stunning views.</p>
-        </div>
-      </div>
-    
-      <!-- Video/Animation (optional) -->
-      <div class="mt-12">
-        <h3 class="text-2xl font-semibold text-indigo-700 mb-4">See the Project in Detail</h3>
-        <div class="relative pb-9/16 overflow-hidden rounded-lg shadow-lg">
-          <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="detail2" class="bg-white py-24" id="caracteristicas">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-10" data-aos="fade-up" data-aos-duration="1000">Features and Amenities</h2>
-    
-      <!-- Feature List -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- Card 1 -->
-        <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
-          <img src="public/assets/img/image_1.jpeg" alt="T2 House" class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
-          <h3 class="text-xl font-semibold text-white mb-3">4 T2 Houses</h3>
-          <p class="text-white">Fully equipped houses with 2 bedrooms and modern architecture, perfect for those seeking practicality and comfort.</p>
-        </div>
-        
-        <!-- Card 2 -->
-        <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
-          <img src="public/assets/img/image_1.jpeg" alt="Suites" class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
-          <h3 class="text-xl font-semibold text-white mb-3">7 Suites</h3>
-          <p class="text-white">Suites with high-quality finishes, spacious and equipped with all the amenities to provide total comfort for residents.</p>
-        </div>
-    
-        <!-- Card 3 -->
-        <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
-          <img src="public/assets/img/image_1.jpeg" alt="Swimming Pool" class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
-          <h3 class="text-xl font-semibold text-white mb-3">Private Pool</h3>
-          <p class="text-white">Relax and enjoy unique moments in the private pool of the complex, with total privacy and comfort.</p>
-        </div>
-    
-        <!-- Card 4 -->
-        <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
-          <img src="public/assets/img/image_1.jpeg" alt="Parking" class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
-          <h3 class="text-xl font-semibold text-white mb-3">Secure Parking</h3>
-          <p class="text-white">Spacious and secure parking with easy access for residents and visitors, providing convenience and safety.</p>
-        </div>
-    
-        <!-- Card 5 -->
-        <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"data-aos="fade-up" data-aos-duration="1200">
-          <img src="public/assets/img/image_1.jpeg" alt="Gourmet Space" class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
-          <h3 class="text-xl font-semibold text-white mb-3">Gourmet Space</h3>
-          <p class="text-white">An ideal space to gather friends and family, with a fully equipped kitchen and an outdoor area to enjoy meals al fresco.</p>
-        </div>
-    
-        <!-- Card 6 -->
-        <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"data-aos="fade-up" data-aos-duration="1200">
-          <img src="public/assets/img/image_1.jpeg" alt="Laundry" class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
-          <h3 class="text-xl font-semibold text-white mb-3">Fully Equipped Laundry</h3>
-          <p class="text-white">A modern and well-equipped laundry room, with all the necessary resources for everyday routines.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <section id="galery" class="bg-gradient-to-r from-indigo-200 via-indigo-300 to-indigo-300 text-white py-24" id="galeria">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-8" data-aos="fade-up" data-aos-duration="1000">Galeria de Imagens</h2>
-      
-      <!-- Swiper Container -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper" data-aos="fade-up" data-aos-duration="1200">
-          <!-- Imagem 1 -->
-          <div class="swiper-slide cursor-pointer" onclick="openLightbox('public/assets/img/image_1.jpeg')">
-            <img src="public/assets/img/image_1.jpeg" alt="Renderização do Complexo" class="w-full h-auto rounded-lg shadow-lg">
-          </div>
-          <!-- Imagem 2 -->
-          <div class="swiper-slide cursor-pointer" onclick="openLightbox('public/assets/img/image_1.jpeg')">
-            <img src="public/assets/img/image_1.jpeg" alt="Renderização do Complexo" class="w-full h-auto rounded-lg shadow-lg">
-          </div>
-          <!-- Imagem 3 -->
-          <div class="swiper-slide cursor-pointer" onclick="openLightbox('public/assets/img/image_1.jpeg')">
-            <img src="public/assets/img/image_1.jpeg" alt="Renderização do Complexo" class="w-full h-auto rounded-lg shadow-lg">
-          </div>
-          <!-- Imagem 4 -->
-          <div class="swiper-slide cursor-pointer" onclick="openLightbox('public/assets/img/image_1.jpeg')">
-            <img src="public/assets/img/image_1.jpeg" alt="Renderização do Complexo" class="w-full h-auto rounded-lg shadow-lg">
-          </div>
-        </div>
-  
-        <!-- Swiper Pagination -->
-        <div class="swiper-pagination"></div>
-  
-        <!-- Swiper Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-  
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center hidden z-50">
-      <div class="relative">
-        <!-- X Button to Close -->
-        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
-        <img id="lightbox-img" src="" alt="Imagem Expandida" class="max-w-full max-h-full rounded-lg shadow-lg">
-      </div>
-    </div>
-</section>
-
-  
-
- 
-
-<section  class="" data-aos="fade-up" data-aos-duration="1000" id="location">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-8">Location</h2>
-      
-      <div class="lg:flex lg:space-x-12">
-        <!-- Interactive Map -->
-        <div class="lg:w-1/2 mb-12 lg:mb-0">
-          <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg"data-aos="fade-up" data-aos-duration="1000">
-            <!-- Google Maps Embed -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6042.222250685471!2d32.598749947986875!3d-25.779584432606217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squinta%20melucha!5e0!3m2!1spt-PT!2smz!4v1721941139352!5m2!1spt-PT!2smz" 
-                    class="w-full h-full border-0" 
-                    allowfullscreen="" 
-                    loading="lazy"></iframe>
-          </div>
-        </div>
-        
-        <!-- Location Description -->
-        <div class="lg:w-1/2 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1000">
-          <p class="text-lg text-gray-700 mb-4">
-            Our complex is located in the heart of Ponta do Ouro, Mozambique, offering the convenience of being close to everything you need.
-          </p>
-          <ul class="text-left text-gray-600 space-y-3">
-            <li class="flex items-center">
-              <i class="bi bi-shop-window text-indigo-600 mr-2 w-5 h-5"></i>
-              Close to shopping centers and local markets.
-            </li>
-            <li class="flex items-center">
-              <i class="bi bi-bus-front text-indigo-600 mr-2 w-5 h-5"></i>
-              Easy access to public transportation and main roads.
-            </li>
-            <li class="flex items-center">
-              <i class="bi bi-house-door text-indigo-600 mr-2 w-5 h-5"></i>
-              Close to schools, hospitals, and clinics.
-            </li>
-            <li class="flex items-center">
-              <i class="bi bi-umbrella text-indigo-600 mr-2 w-5 h-5"></i>
-              Proximity to leisure activities such as beaches and tourist centers.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="bg-indigo-600 py-16 lg:py-24" id="cta-final">
-    <div class="max-w-7xl mx-auto px-6">
-      <!-- Container Flex -->
-      <div class="flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
-        
-        <!-- Formulário de Contato -->
-        <div id="visit" class="w-full lg:w-1/2 text-center text-white">
-          <h2 class="text-3xl md:text-4xl font-extrabold mb-6" data-aos="fade-up" data-aos-duration="1000">
-            Take the Next Step Towards Your Dream Property
-          </h2>
-          <p class="text-lg md:text-xl mb-10 opacity-90" data-aos="fade-up" data-aos-duration="1200">
-            Ready to make your dream a reality? Fill out the form below, or get in touch with us for more details and to schedule a visit.
-          </p>
-  
-          <!-- Formulário de Contato -->
-          <form action="#" method="POST" class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out" data-aos="fade-up" data-aos-duration="1200">
-            <div class="mb-6">
-              <label for="name" class="block text-sm font-semibold text-gray-700">Full Name</label>
-              <input type="text" id="name" name="name" required class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out" placeholder="John Doe">
+    <!-- Welcome Section -->
+    <section class="relative h-screen bg-black">
+        <!-- Swiper Container -->
+        <div class="swiper-container h-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="public/assets/img/image_1.jpeg" alt="Image 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="public/assets/img/image_1.jpeg" alt="Image 2">
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="public/assets/img/image_1.jpeg" alt="Image 3">
+                </div>
             </div>
-            
-            <div class="mb-6">
-              <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
-              <input type="email" id="email" name="email" required class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out" placeholder="example@email.com">
+
+            <!-- Swiper Navigation -->
+            <!-- <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div> -->
+        </div>
+
+        <!-- Dark overlay to improve text contrast -->
+        <div class="absolute inset-0 bg-black"></div>
+
+        <!-- Welcome text over the carousel -->
+        <div class="absolute inset-0 z-10 flex items-center justify-center text-center text-white px-6 sm:px-12">
+            <div class="max-w-2xl mx-auto">
+                <h1 class="text-4xl font-semibold sm:text-5xl" data-aos="fade-up" data-aos-duration="1000">Welcome to Our Complex!</h1>
+                <p class="mt-4 text-lg sm:text-xl text-gray-200" data-aos="fade-up" data-aos-duration="1500">
+                    Explore our property options or come visit the place. We have something special waiting for you.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="mt-8 flex flex-col md:flex-row justify-center gap-6">
+                    <!-- Button 1 - Explore Buying Opportunities -->
+                    <a href="public/views/krymas.html"
+                        class="bg-white text-indigo-600 py-3 px-8 rounded-lg text-lg font-medium hover:bg-indigo-100 transition duration-300" data-aos="fade-up" data-aos-duration="1500">
+                        Explore Buying Opportunities
+                    </a>
+
+                    <!-- Button 2 - Live the Experience - Leisure and Gastronomy -->
+                    <a href="#"
+                        class="bg-indigo-600 text-white py-3 px-8 rounded-lg text-lg font-medium hover:bg-indigo-700 transition duration-300" data-aos="fade-up" data-aos-duration="1500">
+                        Live the Experience - Leisure and Gastronomy
+                    </a>
+                </div>
             </div>
-            
-            <div class="mb-6">
-              <label for="phone" class="block text-sm font-semibold text-gray-700">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out" placeholder="(123) 456-7890">
-            </div>
-  
-            <div class="mb-6">
-              <label for="message" class="block text-sm font-semibold text-gray-700">Your Message</label>
-              <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out" placeholder="Write your message here..."></textarea>
-            </div>
-  
-            <div class="flex justify-center">
-              <button type="submit" class="w-full md:w-auto bg-indigo-700 hover:bg-indigo-800 text-white py-3 px-6 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105">
-                Submit Request
-              </button>
-            </div>
-          </form>
         </div>
-  
-        <!-- Imagem do Complexo -->
-        <div class="w-full lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-up" data-aos-duration="1200">
-          <img src="public/assets/img/image_1.jpeg" alt="Complexo" class="w-full h-auto rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out">
-        </div>
-      </div>
-  
-      <!-- Botões de Ação (opcional) -->
-      <div class="mt-10 space-x-6 flex justify-center" data-aos="fade-up" data-aos-duration="1200">
-        <a href="#contact" class="inline-block bg-indigo-700 text-white py-3 px-8 rounded-full font-semibold text-lg hover:bg-indigo-800 transition duration-300 ease-in-out transform hover:scale-105" data-aos="fade-up" data-aos-duration="1200">
-          Request a Custom Proposal
-        </a>
-        <a href="#contact" class="inline-block bg-indigo-700 text-white py-3 px-8 rounded-full font-semibold text-lg hover:bg-indigo-800 transition duration-300 ease-in-out transform hover:scale-105">
-          Talk to an Agent
-        </a>
-      </div>
-    </div>
-  </section>
-  
+    </section>
 
-  <footer id="footer" class="bg-gray-900 text-white py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
-        <!-- Informações de Contato -->
-        <div class="space-y-6">
-          <h3 class="text-3xl font-semibold text-indigo-500"data-aos="fade-up" data-aos-duration="1200">Contact Us</h3>
-          <p class="text-lg"data-aos="fade-up" data-aos-duration="1200">Rua Principal, Ponta do Ouro, Moçambique</p>
-          <p class="text-lg"data-aos="fade-up" data-aos-duration="1200">📞 (+258) 123 456 789</p>
-          <p class="text-lg"data-aos="fade-up" data-aos-duration="1200">📧 info@complexo.com</p>
+    <!-- Footer -->
+    <!-- <footer class="bg-indigo-600 text-white py-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-lg">&copy; 2024 Exceptional Complex. All rights reserved.</p>
         </div>
-  
-        <!-- Redes Sociais -->
-        <div class="space-y-6">
-          <h3 class="text-3xl font-semibold text-indigo-500"data-aos="fade-up" data-aos-duration="1200">Follow Us</h3>
-          <div class="flex justify-start space-x-8">
-            <a href="https://facebook.com"data-aos="fade-up" data-aos-duration="1200" target="_blank" class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
-              <i class="bi bi-facebook text-4xl"></i>
-            </a>
-            <a href="https://instagram.com"data-aos="fade-up" data-aos-duration="1200" target="_blank" class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
-              <i class="bi bi-instagram text-4xl"></i>
-            </a>
-            <a href="https://linkedin.com"data-aos="fade-up" data-aos-duration="1200" target="_blank" class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
-              <i class="bi bi-linkedin text-4xl"></i>
-            </a>
-            <a href="https://twitter.com"data-aos="fade-up" data-aos-duration="1200" target="_blank" class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
-              <i class="bi bi-twitter text-4xl"></i>
-            </a>
-          </div>
-        </div>
-  
-        <!-- Links Legais -->
-        <div class="space-y-6">
-          <h3 class="text-3xl font-semibold text-indigo-500" data-aos="fade-up" data-aos-duration="1200">Legal</h3>
-          <ul class="space-y-3">
-            <li>
-              <a href="/privacy-policy" data-aos="fade-up" data-aos-duration="1200" class="text-lg hover:text-indigo-400 transition-all duration-300">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/terms-of-use" data-aos="fade-up" data-aos-duration="1200" class="text-lg hover:text-indigo-400 transition-all duration-300">Terms of Use</a>
-            </li>
-            <li>
-              <a href="/disclaimer" data-aos="fade-up" data-aos-duration="1200" class="text-lg hover:text-indigo-400 transition-all duration-300">Disclaimer</a>
-            </li>
-          </ul>
-        </div>
-  
-        <!-- Assinatura -->
-        <div class="text-center lg:text-right mt-6 lg:mt-0">
-          <h3 class="text-3xl font-semibold text-indigo-500"data-aos="fade-up" data-aos-duration="1200">Get in Touch</h3>
-          <p class="text-lg"data-aos="fade-up" data-aos-duration="1200">We'd love to hear from you! Contact us now to learn more about our project.</p>
-          <a href="#contact-form" class="mt-4 inline-block px-8 py-3 bg-indigo-500 text-white rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-indigo-600"data-aos="fade-up" data-aos-duration="1200">Contact Us</a>
-        </div>
-      </div>
-  
-      <!-- Copyright -->
-      <div class="mt-12 text-center text-sm opacity-70"data-aos="fade-up" data-aos-duration="1200">
-        <p>&copy; 2024 Complexo Ponta do Ouro. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-  
-<!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    </footer> -->
 
-  <!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
-     <!-- Script to Toggle Mobile Menu -->
-  <script>
-    const menuButton = document.getElementById("menu-button");
-    const menuMobile = document.getElementById("menu-mobile");
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,  // Enables looping
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,  // 5 seconds per slide
+            },
+        });
+    </script>
 
-    menuButton.addEventListener("click", () => {
-      menuMobile.classList.toggle("hidden");
-    });
-  </script>
-
-
-   
 </body>
 
 </html>
