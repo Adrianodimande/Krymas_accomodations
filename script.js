@@ -1,5 +1,7 @@
 const preloader=document.querySelector('#preloader');
 
+
+
 window.addEventListener('load',function(){
   preloader.classList='hidden';
 });
@@ -51,3 +53,32 @@ window.addEventListener('load',function(){
     const lightbox = document.getElementById('lightbox');
     lightbox.classList.add('hidden'); // Hide the lightbox
   }
+
+
+
+  // <!-- Script to Toggle Mobile Menu -->
+
+
+      // <!-- Script para controlar o modal -->
+  
+        // Função para abrir o modal
+        function openModal(imageElement) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+
+            // Definir o 'src' da imagem modal para a imagem clicada
+            modalImage.src = imageElement.src;
+
+            // Mostrar o modal
+            modal.classList.remove('hidden');
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+        }
+
+
+
+        

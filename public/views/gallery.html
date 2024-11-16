@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+   <link rel="stylesheet" href="../css/output.css">
+   <link rel="stylesheet" href="../css/styles.css">
+     <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body class="bg-gray-100">
+
+      <!-- preloader  -->
+      <div id="preloader" class="fixed flex bg-white h-full w-full justify-center items-center overflow-hidden z-50">
+        <nav class="w-16 h-16  rounded-full border-white border-8 border-solid border-t-[#F28705]">
+        </nav>
+    </div>
+    
+
+    <main-header></main-header>
+    <!-- Início da Seção de Galeria -->
+    <!-- Header -->
+    <header class="relative top-10 bg-[#F28705] text-white py-10 text-center">
+        <h1 class="text-4xl" data-aos="fade-up" data-aos-duration="1200">Galeria</h1>
+        <p class="text-lg mt-2" data-aos="fade-up" data-aos-duration="1200">Fotos e vídeos de nossa propriedade, com destaque para as casas, suítes, piscina, bar, jardim e eventos.</p>
+    </header>
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+
+        <!-- Galeria de Imagens e Vídeos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Imagem 1 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <img src="https://via.placeholder.com/300x200?text=Casa" alt="Casa" class="w-full h-full object-cover rounded-lg cursor-pointer" onclick="openModal(this)">
+            </div>
+
+            <!-- Imagem 2 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <img src="https://via.placeholder.com/300x200?text=Suíte" alt="Suíte" class="w-full h-full object-cover rounded-lg cursor-pointer" onclick="openModal(this)">
+            </div>
+
+            <!-- Imagem 3 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <img src="https://via.placeholder.com/300x200?text=Piscina" alt="Piscina" class="w-full h-full object-cover rounded-lg cursor-pointer" onclick="openModal(this)">
+            </div>
+
+            <!-- Imagem 4 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <img src="https://via.placeholder.com/300x200?text=Bar" alt="Bar" class="w-full h-full object-cover rounded-lg cursor-pointer" onclick="openModal(this)">
+            </div>
+
+            <!-- Imagem 5 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <img src="https://via.placeholder.com/300x200?text=Jardim" alt="Jardim" class="w-full h-full object-cover rounded-lg cursor-pointer" onclick="openModal(this)">
+            </div>
+
+            <!-- Imagem 6 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <img src="https://via.placeholder.com/300x200?text=Evento" alt="Evento" class="w-full h-full object-cover rounded-lg cursor-pointer" onclick="openModal(this)">
+            </div>
+
+            <!-- Vídeo 1 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg cursor-pointer" onclick="openModal(this)"></iframe>
+            </div>
+
+            <!-- Vídeo 2 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg cursor-pointer" onclick="openModal(this)"></iframe>
+            </div>
+
+            <!-- Vídeo 3 -->
+            <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg cursor-pointer" onclick="openModal(this)"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <!-- Fim da Seção de Galeria -->
+
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden z-50">
+        <span id="closeModal" onclick="closeModal()" class="absolute top-4 right-4 text-white text-3xl font-bold cursor-pointer">X</span>
+        <div id="modalContent" class="relative">
+            <img id="modalImage" class="max-w-9/10 max-h-9/10 rounded-lg hidden" src="" alt="Imagem Ampliada">
+            <iframe id="modalVideo" class="max-w-9/10 max-h-9/10 rounded-lg hidden" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+        <!-- GTranslate widget -->
+        <script>window.gtranslateSettings = {"default_language":"en","languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+
+    <script>
+        // Função para abrir o modal
+        function openModal(element) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalVideo = document.getElementById('modalVideo');
+            const modalContent = document.getElementById('modalContent');
+
+            // Verificar se o conteúdo é uma imagem ou um vídeo
+            if (element.tagName === 'IMG') {
+                modalImage.src = element.src; // Para imagens
+                modalImage.classList.remove('hidden');
+                modalVideo.classList.add('hidden');
+            } else if (element.tagName === 'IFRAME') {
+                modalVideo.src = element.src; // Para vídeos
+                modalVideo.classList.remove('hidden');
+                modalImage.classList.add('hidden');
+            }
+
+            // Exibir o modal
+            modal.classList.remove('hidden');
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalVideo = document.getElementById('modalVideo');
+
+            // Limpar conteúdo do modal (se for um vídeo, parar o vídeo ao fechar)
+            modalImage.classList.add('hidden');
+            modalVideo.classList.add('hidden');
+            modalVideo.src = ''; // Limpar o src do vídeo
+
+            // Fechar o modal
+            modal.classList.add('hidden');
+        }
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<main-footer></main-footer>
+
+<script src="../../script.js"></script>
+<script src="../../header.js"></script>
+<script src="../../footer.js"></script>
+<script>
+    
+    // Função para alternar o menu móvel
+    document.getElementById('menu-button').addEventListener('click', function() {
+        const menuMobile = document.getElementById('menu-mobile');
+        menuMobile.classList.toggle('hidden');
+    });
+</script>
+</body>
+
+</html>

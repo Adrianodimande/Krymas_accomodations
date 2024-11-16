@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas e Contato</title>
+    <!-- Link para o Tailwind CSS -->
+<link rel="stylesheet" href="../css/output.css">
+<link rel="stylesheet" href="../css/styles.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+
+      <!-- preloader  -->
+      <div id="preloader" class="fixed flex bg-white h-full w-full justify-center items-center overflow-hidden z-50">
+        <nav class="w-16 h-16  rounded-full border-white border-8 border-solid border-t-[#F28705]">
+        </nav>
+    </div>
+      <!-- Header -->
+       <main-header></main-header>
+   <!-- Header -->
+   <header class="relative top-10 bg-[#F28705] text-white py-10 shadow-lg ">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-semibold"data-aos="fade-up" data-aos-duration="1200">Faça Sua Reserva</h1>
+      <p class="text-lg mt-2"data-aos="fade-up" data-aos-duration="1200">Escolha a data e o tipo de acomodação para garantir sua estadia conosco.</p>
+    </div>
+  </header>
+
+    <!-- Seção Reservas -->
+    <section id="reservas" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Quarto 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="https://via.placeholder.com/300x200" alt="Quarto A" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-[#F28705] mb-2">Quarto Standard</h3>
+                    <p class="text-gray-600 mb-4">Acomodações confortáveis com ar-condicionado e Wi-Fi grátis.</p>
+                    <p class="text-xl font-bold text-[#F28705]">MZN 4,500.00/noite</p>
+                    <p class="text-xl text-gray-600">USD 50.00/noite</p>
+                </div>
+                <!-- Quarto 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="https://via.placeholder.com/300x200" alt="Quarto B" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-[#F28705] mb-2">Quarto Deluxe</h3>
+                    <p class="text-gray-600 mb-4">Acomodações luxuosas com varanda e vista panorâmica.</p>
+                    <p class="text-xl font-bold text-[#F28705]">MZN 8,100.00/noite</p>
+                    <p class="text-xl text-gray-600">USD 90.00/noite</p>
+                </div>
+                <!-- Quarto 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="https://via.placeholder.com/300x200" alt="Quarto C" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-[#F28705] mb-2">Quarto Premium</h3>
+                    <p class="text-gray-600 mb-4">Acomodações exclusivas com jacuzzi e café da manhã incluso.</p>
+                    <p class="text-xl font-bold text-[#F28705]">MZN 10,800.00/noite</p>
+                    <p class="text-xl text-gray-600">USD 120.00/noite</p>
+                </div>
+            </div>
+            
+
+            <div class="mt-16">
+                <h3 class="text-3xl font-semibold text-[#F28705] mb-8">Faça Sua Reserva Rápida</h3>
+            
+                <!-- Formulário de Reserva -->
+                <form action="#" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <div class="space-y-6">
+                        <!-- Data de Check-in -->
+                        <div data-aos="fade-up" data-aos-duration="1200">
+                            <label for="data" class="block text-gray-700 font-semibold mb-2">Data de Check-in</label>
+                            <input type="date" id="data" name="data" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
+                        </div>
+            
+                        <!-- Tipo de Acomodação -->
+                        <div data-aos="fade-up" data-aos-duration="1200">
+                            <label for="quarto" class="block text-gray-700 font-semibold mb-2">Tipo de Acomodação</label>
+                            <select id="quarto" name="quarto" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
+                                <option value="standard">Quarto Standard</option>
+                                <option value="deluxe">Quarto Deluxe</option>
+                                <option value="premium">Quarto Premium</option>
+                            </select>
+                        </div>
+            
+                        <!-- Nome Completo -->
+                        <div data-aos="fade-up" data-aos-duration="1200">
+                            <label for="nome" class="block text-gray-700 font-semibold mb-2">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" placeholder="Digite seu nome" required>
+                        </div>
+            
+                        <!-- E-mail -->
+                        <div data-aos="fade-up" data-aos-duration="1200">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
+                        </div>
+            
+                        <!-- Descrição -->
+                        <div data-aos="fade-up" data-aos-duration="1200">
+                            <label for="descricao" class="block text-gray-700 font-semibold mb-2">Descrição / Observações</label>
+                            <textarea id="descricao" name="descricao" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" placeholder="Digite aqui suas preferências ou observações..." required></textarea>
+                        </div>
+                    </div>
+            
+                    <!-- Botão de Enviar -->
+                    <button type="submit" class="w-full mt-6 px-6 py-3 bg-[#F28705] text-white font-semibold rounded-lg hover:bg-[#d57504] transition duration-300" data-aos="fade-up" data-aos-duration="1200">Confirmar Reserva</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <main-footer></main-footer>
+
+        <!-- GTranslate widget -->
+        <script>window.gtranslateSettings = {"default_language":"en","languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../../script.js"></script>
+    <script src="../../header.js"></script>
+    <script src="../../footer.js"></script>
+    <script>
+        
+        // Função para alternar o menu móvel
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const menuMobile = document.getElementById('menu-mobile');
+            menuMobile.classList.toggle('hidden');
+        });
+    </script>
+<script src="../../footer.js"></script>
+</body>
+</html>

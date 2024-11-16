@@ -30,8 +30,8 @@
 
 <body class="font-sans overflow-x-hidden">
 
-       <!-- preloader  -->
-       <div id="preloader" class="fixed flex bg-white h-full w-full justify-center items-center overflow-hidden z-50">
+    <!-- preloader  -->
+    <div id="preloader" class="fixed flex bg-white h-full w-full justify-center items-center overflow-hidden z-50">
         <nav class="w-16 h-16  rounded-full border-white border-8 border-solid border-t-[#F28705]">
         </nav>
     </div>
@@ -54,10 +54,6 @@
                     <img src="public/assets/img/image_1.jpeg" alt="Image 3">
                 </div>
             </div>
-
-            <!-- Swiper Navigation -->
-            <!-- <div class="swiper-button-next text-white"></div>
-            <div class="swiper-button-prev text-white"></div> -->
         </div>
 
         <!-- Dark overlay to improve text contrast -->
@@ -89,13 +85,17 @@
         </div>
     </section>
 
+    <!-- Float Button for Language Selector -->
+    <div class="gtranslate_wrapper fixed bottom-5 right-5 z-50 bg-[#F28705] p-3 rounded-full shadow-lg cursor-pointer">
+
+    </div>
+
     <!-- Footer -->
     <!-- <footer class="bg-indigo-600 text-white py-8">
         <div class="max-w-7xl mx-auto text-center">
             <p class="text-lg">&copy; 2024 Exceptional Complex. All rights reserved.</p>
         </div>
     </footer> -->
-
 
     <script src="script.js"></script>
     <!-- AOS JS -->
@@ -117,6 +117,10 @@
             },
         });
     </script>
+
+    <!-- GTranslate widget -->
+    <script>window.gtranslateSettings = {"default_language":"en","languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper"}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </body>
 
