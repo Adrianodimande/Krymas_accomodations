@@ -1,3 +1,9 @@
+const preloader=document.querySelector('#preloader');
+
+window.addEventListener('load',function(){
+  preloader.classList='hidden';
+});
+
 
   const swiper = new Swiper('.mySwiper', {
     loop: true, // Para loops infinitos

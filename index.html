@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <!-- Link to Tailwind CSS -->
     <link rel="stylesheet" href="public/css/output.css">
-
+    <link rel="stylesheet" href="public/css/styles.css">
     <!-- Link to Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
@@ -29,6 +29,12 @@
 </head>
 
 <body class="font-sans overflow-x-hidden">
+
+       <!-- preloader  -->
+       <div id="preloader" class="fixed flex bg-white h-full w-full justify-center items-center overflow-hidden z-50">
+        <nav class="w-16 h-16  rounded-full border-white border-8 border-solid border-t-indigo-600">
+        </nav>
+    </div>
 
     <!-- Welcome Section -->
     <section class="relative h-screen bg-black">
@@ -75,7 +81,7 @@
 
                     <!-- Button 2 - Live the Experience - Leisure and Gastronomy -->
                     <a href="#"
-                        class="bg-indigo-600 text-white py-3 px-8 rounded-lg text-lg font-medium hover:bg-indigo-700 transition duration-300" data-aos="fade-up" data-aos-duration="1500">
+                        class="bg-indigo-600 text-white py-3 px-8 rounded-lg text-lg font-medium hover:bg-indigo-700 transition duration-300 hove" data-aos="fade-up" data-aos-duration="1500">
                         Live the Experience - Leisure and Gastronomy
                     </a>
                 </div>
@@ -90,6 +96,8 @@
         </div>
     </footer> -->
 
+
+    <script src="script.js"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>

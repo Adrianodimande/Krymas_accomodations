@@ -2,3 +2,23 @@ html {
     scroll-behavior: smooth;
   }
   
+
+
+/* preloader  */
+
+#preloader nav{
+    animation: preloader 1s infinite ;
+  }
+  
+  @keyframes preloader {
+    0%
+          {
+      transform: rotate(0turn);
+    }
+  
+    100%
+          {
+      transform: rotate(1turn);
+    }
+  }
+  
