@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Complexo Ponta do Ouro</title>
+    <!-- Link do Tailwind CSS CDN -->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Link do Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Link do Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-[#F28705] text-white text-sm p-2">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <span>Contato: +55 11 99999-9999</span> | <span>Email: contato@pontadoouro.com</span>
+            </div>
+            <div>
+                <a href="https://wa.me/551199999999" class="text-white hover:text-gray-200">Whatsapp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-semibold text-[#F28705]">Complexo Ponta do Ouro</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#reservar" class="text-gray-700 hover:text-[#F28705]">Reservar</a>
+                    <a href="#comodidades" class="text-gray-700 hover:text-[#F28705]">Comodidades</a>
+                    <a href="#depoimentos" class="text-gray-700 hover:text-[#F28705]">Depoimentos</a>
+                    <a href="#o-que-temos" class="text-gray-700 hover:text-[#F28705]">O que temos</a>
+                    <a href="#contato" class="text-gray-700 hover:text-[#F28705]">Contato</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-2xl text-gray-700 focus:outline-none">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Seção Banner Fullscreen -->
+    <section class="relative w-full h-screen overflow-hidden">
+        <div class="swiper-container h-full">
+            <!-- Swiper Wrapper for Slides -->
+            <div class="swiper-wrapper h-full">
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative h-full">
+                    <img src="../assets/img/image_1.jpeg" alt="Imagem do Complexo"
+                        class="w-full h-full object-cover opacity-80" />
+                    <div class="absolute inset-0 bg-yellow-500 bg-opacity-40 flex justify-center items-center">
+                        <div class="text-center text-white px-4 md:px-8">
+                            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Bem-vindo ao Complexo Ponta do
+                                Ouro</h1>
+                            <p class="text-lg md:text-xl mb-6">Acomodações exclusivas, localização privilegiada e a
+                                experiência que você merece.</p>
+                            <a href="#reservar"
+                                class="bg-yellow-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-yellow-600 transition duration-300">Reservar
+                                Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Slide 2 (opcional, adicione mais imagens conforme necessário) -->
+                <div class="swiper-slide relative h-full">
+                    <img src="../assets/logo.jpg" alt="Imagem 2" class="w-full h-full object-cover opacity-80" />
+                    <div class="absolute inset-0 bg-yellow-500 bg-opacity-40 flex justify-center items-center">
+                        <div class="text-center text-white px-4 md:px-8">
+                            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Bem-vindo ao Complexo Ponta do
+                                Ouro</h1>
+                            <p class="text-lg md:text-xl mb-6">Acomodações exclusivas, localização privilegiada e a
+                                experiência que você merece.</p>
+                            <a href="#reservar"
+                                class="bg-yellow-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-yellow-600 transition duration-300">Reservar
+                                Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Resumo do Complexo -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">Descubra o Complexo Ponta do Ouro</h2>
+                <p class="text-lg text-gray-600 mt-4">Acomodações exclusivas e um espaço único para sua experiência.</p>
+            </div>
+
+            <!-- Layout com Imagens e Texto -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Coluna 1: Texto -->
+                <div class="flex flex-col justify-center space-y-4">
+                    <p class="text-lg text-gray-700">O Complexo Ponta do Ouro oferece uma infraestrutura de alto padrão
+                        com 4 casas T2 completamente equipadas e 7 suítes exclusivas. Com piscina privada, bar e
+                        jardins, garantimos a melhor experiência para nossos hóspedes.</p>
+                    <p class="text-lg text-gray-700">Além disso, contamos com uma excelente localização, ao lado da
+                        estrada principal e no coração da Ponta do Ouro, perto de todas as comodidades locais.</p>
+
+                    <!-- Botão -->
+                    <a href="#reservar"
+                        class="bg-yellow-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-yellow-600 transition duration-300 text-center">Saiba
+                        Mais</a>
+                </div>
+
+                <!-- Coluna 2: Imagens -->
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="../assets/img/image_1.jpeg" alt="Imagem 1"
+                        class="w-full h-full object-cover rounded-lg shadow-lg cursor-pointer"
+                        onclick="openModal(this)">
+                    <img src="../assets/img/image_1.jpeg" alt="Imagem 2"
+                        class="w-full h-full object-cover rounded-lg shadow-lg cursor-pointer"
+                        onclick="openModal(this)">
+
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden justify-center items-center z-50">
+        <div class="relative w-full h-auto bg-[#00000075] rounded-lg shadow-lg">
+            <!-- Imagem -->
+            <img id="modalImage" src="" alt="Imagem em tela cheia"
+                class="max-w-full max-h-screen object-contain mx-auto my-auto">
+
+            <!-- Botão de Fechar -->
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 bg-yellow-500 text-white py-2 px-4 rounded-full text-lg font-semibold hover:bg-yellow-600">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- Seção O que temos por aqui -->
+    <section id="o-que-temos" class="py-16 bg-white text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">O que temos por aqui</h2>
+            <p class="text-lg mb-12">Além das acomodações de alta qualidade, nosso complexo oferece uma série de
+                atividades e atrações para garantir uma experiência completa.</p>
+
+            <!-- Swiper Carousel -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Atração 1: Natureza -->
+                    <div class="swiper-slide bg-gray-200 p-6 rounded-lg shadow-lg">
+                        <img src="../assets/img/image_1.jpeg" alt="Natureza"
+                            class="w-full h-64 object-cover rounded-lg mb-4 cursor-pointer" onclick="openModal(this)">
+                        <h3 class="text-xl font-semibold text-[#F28705]">Riqueza Natural</h3>
+                        <p class="mt-4">Explore a natureza ao redor, com trilhas e vistas espetaculares. A beleza
+                            natural da Ponta do Ouro é única e encantadora.</p>
+                    </div>
+
+                    <!-- Atração 2: Piscina -->
+                    <div class="swiper-slide bg-gray-200 p-6 rounded-lg shadow-lg">
+                        <img src="../assets/img/image_1.jpeg" alt="Piscina"
+                            class="w-full h-64 object-cover rounded-lg mb-4 cursor-pointer" onclick="openModal(this)">
+                        <h3 class="text-xl font-semibold text-[#F28705]">Piscina Privativa</h3>
+                        <p class="mt-4">Relaxe e aproveite a piscina privativa do complexo, com um ambiente tranquilo e
+                            perfeito para momentos de lazer e descanso.</p>
+                    </div>
+
+                    <!-- Atração 3: Gastronomia -->
+                    <div class="swiper-slide bg-gray-200 p-6 rounded-lg shadow-lg">
+                        <img src="../assets/img/image_1.jpeg" alt="Gastronomia"
+                            class="w-full h-64 object-cover rounded-lg mb-4 cursor-pointer" onclick="openModal(this)">
+                        <h3 class="text-xl font-semibold text-[#F28705]">Gastronomia Local</h3>
+                        <p class="mt-4">Delicie-se com a gastronomia local. Restaurantes e bares próximos oferecem
+                            pratos frescos e sabores únicos da região.</p>
+                    </div>
+
+                    <!-- Atração 4: Praia -->
+                    <div class="swiper-slide bg-gray-200 p-6 rounded-lg shadow-lg">
+                        <img src="../assets/img/image_1.jpeg" alt="Praia"
+                            class="w-full h-64 object-cover rounded-lg mb-4 cursor-pointer" onclick="openModal(this)">
+                        <h3 class="text-xl font-semibold text-[#F28705]">Praia Exclusiva</h3>
+                        <p class="mt-4">A poucos minutos de distância, descubra as praias paradisíacas de Ponta do Ouro,
+                            perfeitas para relaxamento e atividades aquáticas.</p>
+                    </div>
+
+                    <!-- Atração 5: Aventura -->
+                    <div class="swiper-slide bg-gray-200 p-6 rounded-lg shadow-lg">
+                        <img src="../assets/img/image_1.jpeg" alt="Aventura"
+                            class="w-full h-64 object-cover rounded-lg mb-4 cursor-pointer" onclick="openModal(this)">
+                        <h3 class="text-xl font-semibold text-[#F28705]">Aventuras ao Ar Livre</h3>
+                        <p class="mt-4">Para os amantes de aventura, a região oferece atividades como caminhadas,
+                            mergulho e passeios de barco. A diversão está garantida!</p>
+                    </div>
+                </div>
+                <!-- Adiciona a navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Seção Localização com Contatos -->
+    <section id="localizacao-contatos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                <!-- Localização -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Nossa Localização</h3>
+                    <p class="text-lg text-gray-700 mb-4">Estamos no coração da Ponta do Ouro, com fácil acesso à
+                        estrada principal e ao centro da região. Um local ideal para relaxar e explorar.</p>
+                    <div class="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                        <!-- Mapa do Google (substitua pela URL do seu mapa real) -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6042.222250685471!2d32.598749947986875!3d-25.779584432606217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squinta%20melucha!5e0!3m2!1spt-PT!2smz!4v1721941139352!5m2!1spt-PT!2smz"
+                            class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contatos -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contate-nos</h3>
+                    <p class="text-lg text-gray-700 mb-4">Tem alguma dúvida ou precisa de mais informações? Entre em
+                        contato conosco, estamos aqui para ajudar!</p>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-center">
+                            <!-- Ícone de Telefone -->
+                            <i class="bi bi-telephone-fill text-yellow-500 mr-3" style="font-size: 1.5rem;"></i>
+                            <span>+258 84 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <!-- Ícone de Email -->
+                            <i class="bi bi-envelope-fill text-yellow-500 mr-3" style="font-size: 1.5rem;"></i>
+                            <span>contato@pontaouro.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <!-- Ícone de Website -->
+                            <i class="bi bi-globe text-yellow-500 mr-3" style="font-size: 1.5rem;"></i>
+                            <span>www.pontaouro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Convite -->
+    <section id="convite" class="py-16 bg-[#F28705] text-white relative">
+        <!-- Imagem de Fundo -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="../assets/img/image_1.jpeg" alt="Imagem Convite" class="w-full h-full object-cover rounded-lg">
+
+            <!-- Sobreposição escura para melhorar legibilidade -->
+            <div class="absolute inset-0 bg-[#F28705] bg-opacity-80 rounded-lg"></div>
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Venha nos Visitar!</h2>
+            <p class="text-lg md:text-xl mb-6">Viva uma experiência única em um dos melhores destinos. Relaxe, aproveite
+                e crie memórias inesquecíveis.</p>
+            <p class="text-xl mb-8">Estamos esperando por você no Complexo Ponta do Ouro, um lugar perfeito para férias,
+                descanso ou até mesmo uma reunião de negócios.</p>
+            <a href="#reservar"
+                class="bg-white text-[#F28705] py-3 px-8 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300">Reserve
+                Agora</a>
+        </div>
+    </section>
+
+
+    <!-- Seção de Depoimentos -->
+    <section id="depoimentos" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">O que nossos hóspedes dizem</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Depoimento 1 -->
+                    <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+                        <div class="flex justify-center mb-4">
+                            <img src="../assets/logo.jpg" alt="Maria Souza"
+                                class="rounded-full border-2 border-[#F28705] w-[80px] h-[80px]">
+                        </div>
+                        <p class="text-lg italic mb-4">"Foi uma experiência incrível! As suítes são lindas, a piscina é
+                            maravilhosa e o atendimento foi impecável."</p>
+                        <p class="font-bold">Maria Souza</p>
+                        <p class="text-sm text-gray-500">Hóspede em Janeiro 2024</p>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+                        <div class="flex justify-center mb-4">
+                            <img src="../assets/logo.jpg" alt="Carlos Oliveira"
+                                class="rounded-full border-2 border-[#F28705] w-[80px] h-[80px]">
+                        </div>
+                        <p class="text-lg italic mb-4">"Localização excelente e todo o conforto que procurávamos. Com
+                            certeza voltaremos!"</p>
+                        <p class="font-bold">Carlos Oliveira</p>
+                        <p class="text-sm text-gray-500">Hóspede em Fevereiro 2024</p>
+                    </div>
+                    <!-- Depoimento 3 -->
+                    <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+                        <div class="flex justify-center mb-4">
+                            <img src="../assets/logo.jpg" alt="Ana Lima" class="rounded-full border-2 border-[#F28705] w-[80px] h-[80px]">
+                        </div>
+                        <p class="text-lg italic mb-4">"Ficamos encantados com o lugar! A área da piscina é um charme e
+                            o ambiente é super acolhedor."</p>
+                        <p class="font-bold">Ana Lima</p>
+                        <p class="text-sm text-gray-500">Hóspede em Março 2024</p>
+                    </div>
+                    <!-- Depoimento 4 -->
+                    <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+                        <div class="flex justify-center mb-4">
+                            <img src="../assets/logo.jpg" alt="João Pereira"
+                                class="rounded-full border-2 border-[#F28705] w-[80px] h-[80px]">
+                        </div>
+                        <p class="text-lg italic mb-4">"Estivemos em família e adoramos! A casa é super bem equipada e o
+                            local é perfeito para relaxar."</p>
+                        <p class="font-bold">João Pereira</p>
+                        <p class="text-sm text-gray-500">Hóspede em Abril 2024</p>
+                    </div>
+                    <!-- Depoimento 5 -->
+                    <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+                        <div class="flex justify-center mb-4">
+                            <img src="../assets/logo.jpg" alt="Fernanda Costa"
+                                class="rounded-full border-2 border-[#F28705] w-[80px] h-[80px]">
+                        </div>
+                        <p class="text-lg italic mb-4">"O ambiente é maravilhoso, super tranquilo e o atendimento
+                            realmente faz a diferença. Vale a pena!"</p>
+                        <p class="font-bold">Fernanda Costa</p>
+                        <p class="text-sm text-gray-500">Hóspede em Maio 2024</p>
+                    </div>
+                    <!-- Depoimento 6 -->
+                    <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+                        <div class="flex justify-center mb-4">
+                            <img src="../assets/logo.jpg" alt="Ricardo Almeida"
+                                class="rounded-full border-2 border-[#F28705] w-[80px] h-[80px]">
+                        </div>
+                        <p class="text-lg italic mb-4">"Lugar incrível! A vista da piscina é deslumbrante e tudo é feito
+                            para você se sentir em casa."</p>
+                        <p class="font-bold">Ricardo Almeida</p>
+                        <p class="text-sm text-gray-500">Hóspede em Junho 2024</p>
+                    </div>
+                </div>
+                <!-- Adiciona a navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#262626] text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#F28705]">Sobre Nós</h3>
+                    <p>Aproveite a nossa localização privilegiada e acomodações de qualidade. O destino ideal para
+                        momentos inesquecíveis.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#F28705]">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#reservar" class="hover:underline">Reservar Agora</a></li>
+                        <li><a href="#comodidades" class="hover:underline">Comodidades</a></li>
+                        <li><a href="#depoimentos" class="hover:underline">Depoimentos</a></li>
+                        <li><a href="#contato" class="hover:underline">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#F28705]">Siga-nos</h3>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-2xl hover:text-blue-500"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-pink-500"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Complexo Ponta do Ouro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script do Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            slidesPerView: 1, // Default for small screens
+            spaceBetween: 20, // Espaçamento entre os slides
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: { // telas maiores que 640px (sm)
+                    slidesPerView: 2,
+                },
+                768: { // telas maiores que 768px (md)
+                    slidesPerView: 3,
+                },
+                1024: { // telas maiores que 1024px (lg)
+                    slidesPerView: 4,
+                },
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
+
+    <script>
+        const swiperr = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade', // Efeito de transição suave
+            speed: 1000,
+        });
+    </script>
+
+    <!-- Script para controlar o modal -->
+    <script>
+        // Função para abrir o modal
+        function openModal(imageElement) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+
+            // Definir o 'src' da imagem modal para a imagem clicada
+            modalImage.src = imageElement.src;
+
+            // Mostrar o modal
+            modal.classList.remove('hidden');
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+        }
+    </script>
+
+</body>
+
+</html>
