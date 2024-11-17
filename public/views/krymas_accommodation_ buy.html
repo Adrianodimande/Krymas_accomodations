@@ -90,41 +90,51 @@
         </div>
     </header>
 
+    <div class="gtranslate_wrapper fixed bottom-20 right-10 z-50 bg-[#F28705] p-3 rounded-full shadow-lg cursor-pointer">
 
+    </div>
     <!-- Hero Section -->
     <section id="main" class="relative h-screen">
         <!-- Image with overlay -->
-        <img src="/public/assets/img/image_1.jpeg" alt="Complexo" class="absolute inset-0 w-full h-full object-cover" />
+        <img data-src="/public/assets/img/image_1.jpeg" alt="Complexo" class="absolute inset-0 w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for contrast -->
-
+    
         <!-- Content -->
         <div class="container mx-auto h-full flex flex-col justify-center text-center text-white px-6 sm:px-12 z-10">
             <!-- Title -->
-            <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg" data-aos="fade-up"
-                data-aos-duration="1000">
-                Discover Your Dream Complex
+            <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight drop-shadow-lg" data-aos="fade-up"
+                data-aos-duration="2000">
+                O Melhor Negócio da Sua Vida Está Aqui
             </h1>
-
-            <p class="text-lg sm:text-2xl mb-8 max-w-lg mx-auto opacity-90" data-aos="fade-up" data-aos-duration="1200">
-                A modern, sustainable, and luxurious living experience, in the heart of the city.
+    
+            <!-- Preço - Chamativo -->
+            <p class="text-3xl sm:text-4xl font-bold mt-8 text-[#F28705] drop-shadow-xl" data-aos="fade-up" data-aos-duration="2000">
+                <span class="text-5xl sm:text-6xl font-extrabold"data-aos="fade-up" data-aos-duration="2000">Isso pode ser seu por apenas</span><br>
+                <span class="text-5xl sm:text-6xl font-extrabold text-white"data-aos="fade-up" data-aos-duration="2000">$1,000,000</span><br>
+                <span class="text-xl sm:text-2xl text-[#F28705]"data-aos="fade-up" data-aos-duration="2000">Ou <span class="font-extrabold text-white" data-aos="fade-up" data-aos-duration="2000">MZN 63.894.374</span></span>
             </p>
-
+    
+            <!-- Benefício do Negócio -->
+            <p class="text-lg sm:text-2xl mb-8 max-w-lg mx-auto opacity-90" data-aos="fade-up" data-aos-duration="2000">
+                Aproveite a oportunidade de um excelente retorno financeiro com um investimento estratégico. O momento de agir é agora!
+            </p>
+    
             <!-- Botões de Chamada -->
-            <div class="flex justify-center gap-4">
-                <a href="#about"
+            <div class="flex justify-center gap-4 mt-6">
+                <a href="#detail1"
                     class="bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
-                    data-aos="zoom-in" data-aos-duration="1500">
-                    Learn More
+                    data-aos="zoom-in" data-aos-duration="2000">
+                    Descubra Mais
                 </a>
-                <a href="#contact"
+                <a href="#visit"
                     class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
-                    data-aos="zoom-in" data-aos-duration="1500">
-                    Schedule a Visit
+                    data-aos="zoom-in" data-aos-duration="2000">
+                    Agende uma Visita
                 </a>
             </div>
-
         </div>
     </section>
+    
 
 
     <section id="detail1" class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] text-white py-24"
@@ -132,10 +142,10 @@
         <div class="max-w-7xl mx-auto px-6 text-center">
             <!-- Title -->
             <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate__animated animate__fadeInUp"
-                data-aos="fade-up" data-aos-duration="1000">The Ponta do Ouro Complex</h2>
+                data-aos="fade-up" data-aos-duration="1000"data-no-translate>Accommodation Krymas</h2>
             <p class="md:text-xl mb-8 leading-relaxed animate__animated animate__fadeInUp" data-aos="fade-up"
                 data-aos-duration="1200">
-                The Ponta do Ouro Complex is a place where comfort, privacy, and location come together. It offers 4
+                Krymas Accommodation is a place where comfort, privacy, and location come together. It offers 4
                 fully equipped T2 houses and 7 luxury suites, with a range of amenities to ensure the highest quality of
                 life. Located next to the road and in the center of Ponta do Ouro, the project is perfect for those who
                 wish to live here or for those looking to invest in a strategic and peaceful location.
@@ -146,7 +156,7 @@
                 <!-- Highlight 1 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" data-src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
                         alt="24/7 Security">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">24/7 Security</h3>
                     <p class="text-gray-800">Fully enclosed with 24-hour security, providing peace of mind and
@@ -155,7 +165,7 @@
                 <!-- Highlight 2 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" data-src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
                         alt="Sustainability">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Sustainability</h3>
                     <p class="text-gray-800">Equipped with sustainable systems, including a water borehole and
@@ -164,7 +174,7 @@
                 <!-- Highlight 3 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" data-src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
                         alt="Prime Location">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Prime Location</h3>
                     <p class="text-gray-800">In the heart of Ponta do Ouro, with easy access to all regional
@@ -174,10 +184,8 @@
 
             <!-- Video/Animation (optional) -->
             <div class="w-full  mt-12">
-                <iframe class="w-full rounded-lg h-[400px]" data-aos="fade-up" data-aos-duration="1200" src="https://www.youtube.com/embed/NwQ-dL1K8WM"
-                title="Pais Bons vs. Pais Maus || Tipos de Mães e Pais" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="w-full rounded-lg h-[400px]" src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2F100068009168215%2Fvideos%2F949058749629017%2F&show_text=false&width=560&t=0" width="560" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                
             </div>
         </div>
     </section>
@@ -196,7 +204,7 @@
                 <!-- Card 1 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/public/assets/img/image_1.jpeg" alt="T2 House"
+                    <img data-src="/public/assets/img/image_1.jpeg" alt="T2 House"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">4 T2 Houses</h3>
                     <p class="text-white">Fully equipped houses with 2 bedrooms and modern architecture, perfect for
@@ -206,7 +214,7 @@
                 <!-- Card 2 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/public/assets/img/image_1.jpeg" alt="Suites"
+                    <img data-src="/public/assets/img/image_1.jpeg" alt="Suites"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3 ">7 Suites</h3>
                     <p class="text-white">Suites with high-quality finishes, spacious and equipped with all the
@@ -216,7 +224,7 @@
                 <!-- Card 3 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/public/assets/img/image_1.jpeg" alt="Swimming Pool"
+                    <img data-src="/public/assets/img/image_1.jpeg" alt="Swimming Pool"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Private Pool</h3>
                     <p class="text-white">Relax and enjoy unique moments in the private pool of the complex, with total
@@ -226,7 +234,7 @@
                 <!-- Card 4 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/public/assets/img/image_1.jpeg" alt="Parking"
+                    <img data-src="/public/assets/img/image_1.jpeg" alt="Parking"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Secure Parking</h3>
                     <p class="text-white">Spacious and secure parking with easy access for residents and visitors,
@@ -236,7 +244,7 @@
                 <!-- Card 5 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/public/assets/img/image_1.jpeg" alt="Gourmet Space"
+                    <img data-src="/public/assets/img/image_1.jpeg" alt="Gourmet Space"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Gourmet Space</h3>
                     <p class="text-white">An ideal space to gather friends and family, with a fully equipped kitchen and
@@ -246,7 +254,7 @@
                 <!-- Card 6 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img src="/public/assets/img/image_1.jpeg" alt="Laundry"
+                    <img data-src="/public/assets/img/image_1.jpeg" alt="Laundry"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Fully Equipped Laundry</h3>
                     <p class="text-white">A modern and well-equipped laundry room, with all the necessary resources for
@@ -273,19 +281,19 @@
                   <!-- Slide 1 -->
                   <div class="swiper-slide">
                     <div class="relative w-full h-64">
-                      <img src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 1" class="w-full h-full object-cover cursor-pointer" />
+                      <img data-src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 1" class="w-full h-full object-cover cursor-pointer" />
                     </div>
                   </div>
                   <!-- Slide 2 -->
                   <div class="swiper-slide">
                     <div class="relative w-full h-64">
-                      <img src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 2" class="w-full h-full object-cover cursor-pointer" />
+                      <img data-src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 2" class="w-full h-full object-cover cursor-pointer" />
                     </div>
                   </div>
                   <!-- Slide 3 -->
                   <div class="swiper-slide">
                     <div class="relative w-full h-64">
-                      <img src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 3" class="w-full h-full object-cover cursor-pointer" />
+                      <img data-src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 3" class="w-full h-full object-cover cursor-pointer" />
                     </div>
                   </div>
                 </div>
@@ -435,7 +443,7 @@
                 <!-- Imagem do Complexo -->
                 <div class="w-full lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-up" data-aos-duration="1200">
                     <div class="relative w-full h-96 lg:h-auto">
-                        <img src="/public/assets/img/image_1.jpeg"  onclick="openModal(this)" alt="Complexo"
+                        <img data-src="/public/assets/img/image_1.jpeg"  onclick="openModal(this)" alt="Complexo"
                             class="w-full h-full object-cover rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out cursor-pointer">
                     </div>
                 </div>
@@ -452,8 +460,9 @@
                 <div class="space-y-6">
                     <h3 class="text-3xl font-semibold text-[#F29F05]" data-aos="fade-up" data-aos-duration="1200">
                         Contact Us</h3>
-                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">Rua Principal, Ponta do Ouro,
-                        Moçambique</p>
+                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">
+                        Main Street, Ponta do Ouro,
+                        Mozambique</p>
                     <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">📞 (+258) 123 456 789</p>
                     <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">📧 info@complexo.com</p>
                 </div>
@@ -538,6 +547,7 @@
     </script>
 
     <script src="../../script.js"></script>
+    <script src="../../lazy_loading.js"></script>
     <!-- Script to Toggle Mobile Menu -->
     <script>
         const menuButton = document.getElementById("menu-button");
