@@ -11,7 +11,7 @@ class Header extends HTMLElement {
 
             <!-- Logo -->
             <div class="text-xl font-semibold text-[#F28705]" data-aos="fade-down" data-aos-duration="1000">
-              <a href="#">
+              <a class='w-10 h-10' href="#">
                         <img class="w-10 h-10" src="../assets/logo.png" alt="" srcset="">
                     </a>
             </div>
