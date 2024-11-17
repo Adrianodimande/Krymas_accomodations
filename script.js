@@ -1,3 +1,4 @@
+
 const preloader=document.querySelector('#preloader');
 
 
@@ -7,35 +8,6 @@ window.addEventListener('load',function(){
 });
 
 
-  const swiper = new Swiper('.mySwiper', {
-    loop: true, // Para loops infinitos
-    slidesPerView: 1, // Exibe 1 slide por vez
-    spaceBetween: 10, // Espaço entre os slides
-
-    // Adiciona navegação (botões)
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // Adiciona paginação
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-    // Responsividade
-    breakpoints: {
-      // Quando a largura for maior que 640px
-      640: {
-        slidesPerView: 2, // Exibe 2 slides por vez
-      },
-      // Quando a largura for maior que 1024px
-      1024: {
-        slidesPerView: 3, // Exibe 3 slides por vez
-      },
-    },
-  });
 
 
 
@@ -80,5 +52,4 @@ window.addEventListener('load',function(){
         }
 
 
-
-        
+      

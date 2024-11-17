@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="../css/styles.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+        <!-- Link do Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 
@@ -19,93 +21,107 @@
     </div>
       <!-- Header -->
        <main-header></main-header>
-   <!-- Header -->
-   <header class="relative top-10 bg-[#F28705] text-white py-10 shadow-lg ">
+ <!-- Header -->
+<header class="relative top-10 bg-[#F28705] text-white py-10 shadow-lg">
     <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-semibold"data-aos="fade-up" data-aos-duration="1200">Faça Sua Reserva</h1>
-      <p class="text-lg mt-2"data-aos="fade-up" data-aos-duration="1200">Escolha a data e o tipo de acomodação para garantir sua estadia conosco.</p>
+        <h1 class="text-4xl font-semibold" data-aos="fade-up" data-aos-duration="1200">Make Your Reservation</h1>
+        <p class="text-lg mt-2" data-aos="fade-up" data-aos-duration="1200">Choose the date and type of accommodation to secure your stay with us.</p>
     </div>
-  </header>
+</header>
 
-    <!-- Seção Reservas -->
-    <section id="reservas" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto text-center px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Quarto 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
-                    <img src="https://via.placeholder.com/300x200" alt="Quarto A" class="w-full h-48 object-cover mb-4 rounded-lg">
-                    <h3 class="text-xl font-semibold text-[#F28705] mb-2">Quarto Standard</h3>
-                    <p class="text-gray-600 mb-4">Acomodações confortáveis com ar-condicionado e Wi-Fi grátis.</p>
-                    <p class="text-xl font-bold text-[#F28705]">MZN 4,500.00/noite</p>
-                    <p class="text-xl text-gray-600">USD 50.00/noite</p>
-                </div>
-                <!-- Quarto 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
-                    <img src="https://via.placeholder.com/300x200" alt="Quarto B" class="w-full h-48 object-cover mb-4 rounded-lg">
-                    <h3 class="text-xl font-semibold text-[#F28705] mb-2">Quarto Deluxe</h3>
-                    <p class="text-gray-600 mb-4">Acomodações luxuosas com varanda e vista panorâmica.</p>
-                    <p class="text-xl font-bold text-[#F28705]">MZN 8,100.00/noite</p>
-                    <p class="text-xl text-gray-600">USD 90.00/noite</p>
-                </div>
-                <!-- Quarto 3 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
-                    <img src="https://via.placeholder.com/300x200" alt="Quarto C" class="w-full h-48 object-cover mb-4 rounded-lg">
-                    <h3 class="text-xl font-semibold text-[#F28705] mb-2">Quarto Premium</h3>
-                    <p class="text-gray-600 mb-4">Acomodações exclusivas com jacuzzi e café da manhã incluso.</p>
-                    <p class="text-xl font-bold text-[#F28705]">MZN 10,800.00/noite</p>
-                    <p class="text-xl text-gray-600">USD 120.00/noite</p>
-                </div>
+<!-- Reservation Section -->
+<section id="reservas" class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto text-center px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Room 1 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
+                <img src="../assets/img/image_1.jpeg" alt="Room A" class="w-full h-48 object-cover mb-4 rounded-lg cursor-pointer" onclick="openModal(this)">
+                <h3 class="text-xl font-semibold text-[#F28705] mb-2">Standard Room</h3>
+                <p class="text-gray-600 mb-4">Comfortable accommodations with air conditioning and free Wi-Fi.</p>
+                <p class="text-xl font-bold text-[#F28705]">MZN 4,500.00/night</p>
+                <p class="text-xl text-gray-600">USD 50.00/night</p>
             </div>
-            
-
-            <div class="mt-16">
-                <h3 class="text-3xl font-semibold text-[#F28705] mb-8">Faça Sua Reserva Rápida</h3>
-            
-                <!-- Formulário de Reserva -->
-                <form action="#" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-                    <div class="space-y-6">
-                        <!-- Data de Check-in -->
-                        <div data-aos="fade-up" data-aos-duration="1200">
-                            <label for="data" class="block text-gray-700 font-semibold mb-2">Data de Check-in</label>
-                            <input type="date" id="data" name="data" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
-                        </div>
-            
-                        <!-- Tipo de Acomodação -->
-                        <div data-aos="fade-up" data-aos-duration="1200">
-                            <label for="quarto" class="block text-gray-700 font-semibold mb-2">Tipo de Acomodação</label>
-                            <select id="quarto" name="quarto" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
-                                <option value="standard">Quarto Standard</option>
-                                <option value="deluxe">Quarto Deluxe</option>
-                                <option value="premium">Quarto Premium</option>
-                            </select>
-                        </div>
-            
-                        <!-- Nome Completo -->
-                        <div data-aos="fade-up" data-aos-duration="1200">
-                            <label for="nome" class="block text-gray-700 font-semibold mb-2">Nome Completo</label>
-                            <input type="text" id="nome" name="nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" placeholder="Digite seu nome" required>
-                        </div>
-            
-                        <!-- E-mail -->
-                        <div data-aos="fade-up" data-aos-duration="1200">
-                            <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Digite seu email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
-                        </div>
-            
-                        <!-- Descrição -->
-                        <div data-aos="fade-up" data-aos-duration="1200">
-                            <label for="descricao" class="block text-gray-700 font-semibold mb-2">Descrição / Observações</label>
-                            <textarea id="descricao" name="descricao" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" placeholder="Digite aqui suas preferências ou observações..." required></textarea>
-                        </div>
-                    </div>
-            
-                    <!-- Botão de Enviar -->
-                    <button type="submit" class="w-full mt-6 px-6 py-3 bg-[#F28705] text-white font-semibold rounded-lg hover:bg-[#d57504] transition duration-300" data-aos="fade-up" data-aos-duration="1200">Confirmar Reserva</button>
-                </form>
+            <!-- Room 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
+                <img src="../assets/img/image_1.jpeg" alt="Room B" class="w-full h-48 object-cover mb-4 rounded-lg cursor-pointer" onclick="openModal(this)">
+                <h3 class="text-xl font-semibold text-[#F28705] mb-2">Deluxe Room</h3>
+                <p class="text-gray-600 mb-4">Luxurious accommodations with a balcony and panoramic view.</p>
+                <p class="text-xl font-bold text-[#F28705]">MZN 8,100.00/night</p>
+                <p class="text-xl text-gray-600">USD 90.00/night</p>
             </div>
-            
+            <!-- Room 3 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-duration="1200">
+                <img src="../assets/img/image_1.jpeg" alt="Room C" class="w-full h-48 object-cover mb-4 rounded-lg cursor-pointer" onclick="openModal(this)">
+                <h3 class="text-xl font-semibold text-[#F28705] mb-2">Premium Room</h3>
+                <p class="text-gray-600 mb-4">Exclusive accommodations with a jacuzzi and breakfast included.</p>
+                <p class="text-xl font-bold text-[#F28705]">MZN 10,800.00/night</p>
+                <p class="text-xl text-gray-600">USD 120.00/night</p>
+            </div>
         </div>
-    </section>
+
+        <div class="mt-16">
+            <h3 class="text-3xl font-semibold text-[#F28705] mb-8">Quick Reservation</h3>
+
+            <!-- Reservation Form -->
+            <form action="#" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                <div class="space-y-6">
+                    <!-- Check-in Date -->
+                    <div data-aos="fade-up" data-aos-duration="1200">
+                        <label for="data" class="block text-gray-700 font-semibold mb-2">Check-in Date</label>
+                        <input type="date" id="data" name="data" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
+                    </div>
+
+                    <!-- Type of Accommodation -->
+                    <div data-aos="fade-up" data-aos-duration="1200">
+                        <label for="quarto" class="block text-gray-700 font-semibold mb-2">Type of Accommodation</label>
+                        <select id="quarto" name="quarto" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
+                            <option value="standard">Standard Room</option>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="premium">Premium Room</option>
+                        </select>
+                    </div>
+
+                    <!-- Full Name -->
+                    <div data-aos="fade-up" data-aos-duration="1200">
+                        <label for="nome" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                        <input type="text" id="nome" name="nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div data-aos="fade-up" data-aos-duration="1200">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" required>
+                    </div>
+
+                    <!-- Description -->
+                    <div data-aos="fade-up" data-aos-duration="1200">
+                        <label for="descricao" class="block text-gray-700 font-semibold mb-2">Description / Notes</label>
+                        <textarea id="descricao" name="descricao" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F28705] transition duration-300" placeholder="Enter your preferences or notes..." required></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full mt-6 px-6 py-3 bg-[#F28705] text-white font-semibold rounded-lg hover:bg-[#d57504] transition duration-300" data-aos="fade-up" data-aos-duration="1200">Confirm Reservation</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+             <!-- Modal de Imagem -->
+             <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden justify-center items-center z-50">
+                <div class="relative w-full h-auto bg-[#00000075] rounded-lg shadow-lg">
+                    <!-- Imagem -->
+                    <img id="modalImage" src="" alt="Imagem em tela cheia"
+                        class="max-w-full max-h-screen object-contain mx-auto my-auto">
+        
+                    <!-- Botão de Fechar -->
+                    <button onclick="closeModal()"
+                        class="absolute top-4 right-4 bg-[#F28705] text-white py-2 px-4 rounded-full text-lg font-semibold hover:bg-yellow-600">
+                        Fechar
+                    </button>
+                </div>
+            </div>
 
     <main-footer></main-footer>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,8 @@
   <title>Acomodações - Ponta do Ouro</title>
   <link rel="stylesheet" href="../css/output.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="../css/styles.css">
@@ -24,152 +25,157 @@
 
   <main-header></main-header>
   <!-- Header -->
-  <header class="relative top-10 bg-[#F28705] text-white py-10 shadow-lg">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-semibold">Acomodações</h1>
-      <p class="text-lg mt-2">Descubra nossas casas e suítes completamente equipadas para sua estadia.</p>
+<header class="relative top-10 bg-[#F28705] text-white py-10 shadow-lg">
+  <div class="container mx-auto text-center">
+    <h1 class="text-4xl font-semibold">Accommodations</h1>
+    <p class="text-lg mt-2">Discover our fully equipped houses and suites for your stay.</p>
+  </div>
+</header>
+
+<!-- Section: Accommodations -->
+<section class="">
+  <div class="container mx-auto px-6">
+
+    <!-- Swiper: Accommodation Images -->
+
+
+    <!-- Description of units -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  py-32">
+      <!-- House T2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+        <div class="swiper mySwiperaccomodations w-full h-72 sm:h-80 md:h-96 lg:h-120">
+          <!-- Wrapper for the slides -->
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img class="w-full h-full object-cover cursor-pointer" onclick="openModal(this)" src="../assets/img/image_1.jpeg"
+                alt="Suite Room (In Equipment)">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img class="w-full h-full object-cover cursor-pointer" onclick="openModal(this)" src="../assets/img/image_1.jpeg"
+                alt="Suite Room (In Equipment)">
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <div class="swiper-button-next text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
+          <div class="swiper-button-prev text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
+
+          <!-- Pagination (dots) -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-accent">House T2</h3>
+          <p class="text-gray-700 mt-2">4 T2 Houses, fully equipped with 2 bedrooms, 1 living room, fully equipped kitchen, bathroom, and outdoor area with a garden.</p>
+          <ul class="mt-4 text-gray-700">
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> 2 Double beds</li>
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Free Wi-Fi</li>
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Air conditioning</li>
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Equipped kitchen</li>
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Private pool</li>
+          </ul>
+          <div class="mt-4">
+            <p class="text-xl font-semibold">Price: From MZN 6,000 / USD 90 per night</p>
+            <a href="">
+              <button class="bg-orange-600 mt-4 bg-accent text-white py-2 px-4 rounded-lg hover:bg-orange-400 w-full">
+                Check Availability
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suite -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+        <div class="swiper mySwiperaccomodations w-full h-72 sm:h-80 md:h-96 lg:h-120">
+          <!-- Wrapper for the slides -->
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img class="w-full h-full object-cover cursor-pointer" onclick="openModal(this)" src="../assets/img/image_1.jpeg"
+                alt="Suite Room (In Equipment)">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img class="w-full h-full object-cover cursor-pointer" onclick="openModal(this)" src="../assets/img/image_1.jpeg"
+                alt="Suite Room (In Equipment)">
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <div class="swiper-button-next text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
+          <div class="swiper-button-prev text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
+
+          <!-- Pagination (dots) -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-accent">Suite Room</h3>
+          <p class="text-gray-700 mt-2">7 Suite Rooms equipped with double bed, private bathroom, and balcony.</p>
+          <ul class="mt-4 text-gray-700">
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> 1 Double bed</li>
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Free Wi-Fi</li>
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Air conditioning</li>
+            <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Private bathroom</li>
+          </ul>
+          <div class="mt-4">
+            <p class="text-xl font-semibold">Price: From MZN 4,200 / USD 63 per night</p>
+            <a href="">
+              <button class="bg-orange-600 mt-4 bg-accent text-white py-2 px-4 rounded-lg hover:bg-orange-400 w-full">
+                Check Availability
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+<!-- Suite (In Equipment) -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+  <div class="swiper mySwiperaccomodations w-full h-72 sm:h-80 md:h-96 lg:h-120">
+    <!-- Wrapper for the slides -->
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img class="w-full h-full object-cover cursor-pointer" onclick="openModal(this)" src="../assets/img/image_1.jpeg"
+          onclick="openModal(this)" alt="Suite Room (In Equipment)">
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img class="w-full h-full object-cover cursor-pointer" onclick="openModal(this)" src="../assets/img/image_1.jpeg"
+          onclick="openModal(this)" alt="Suite Room (In Equipment)">
+      </div>
     </div>
-  </header>
 
-  <!-- Section: Acomodações -->
-  <section class="py-12">
-    <div class="container mx-auto px-6">
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
+    <div class="swiper-button-prev text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
 
+    <!-- Pagination (dots) -->
+    <div class="swiper-pagination"></div>
+  </div>
 
-      <!-- Swiper: Imagens das acomodações -->
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold text-accent">Suite Room (In Equipment)</h3>
+    <p class="text-gray-700 mt-2">3 Suite Rooms still to be equipped, with a view of the garden and pool.</p>
+    <ul class="mt-4 text-gray-700">
+      <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Double bed</li>
+      <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Free Wi-Fi</li>
+      <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Air conditioning</li>
+    </ul>
+    <div class="mt-4">
+      <p class="text-xl font-semibold">Price: From MZN 3,600 / USD 54 per night</p>
+      <a href="">
+        <button class="bg-orange-600 mt-4 bg-accent text-white py-2 px-4 rounded-lg hover:bg-orange-400 w-full">
+          Check Availability
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
 
-
-      <!-- Descrição das unidades -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Casa T2 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
-          <div class="swiper mySwiperaccomodations w-full h-72 sm:h-80 md:h-96 lg:h-120">
-            <!-- Wrapper para os slides -->
-            <div class="swiper-wrapper">
-              <!-- Slide 1 -->
-              <div class="swiper-slide">
-                <img class="w-full h-full object-cover" src="../assets/img/image_1.jpeg"
-                  alt="Quarto Suíte (Em Equipamento)">
-              </div>
-              <!-- Slide 2 -->
-              <div class="swiper-slide">
-                <img class="w-full h-full object-cover" src="../assets/img/image_1.jpeg"
-                  alt="Quarto Suíte (Em Equipamento)">
-              </div>
-            </div>
-
-            <!-- Setas de navegação -->
-            <div class="swiper-button-next text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
-            <div class="swiper-button-prev text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
-
-            <!-- Paginação (pontos) -->
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-accent">Casa T2</h3>
-            <p class="text-gray-700 mt-2">4 Casas T2, completamente equipadas com 2 quartos, 1 sala de estar, cozinha
-              equipada, banheiro e área externa com jardim.</p>
-            <ul class="mt-4 text-gray-700">
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> 2 Camas de casal</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Wi-Fi gratuito</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Ar-condicionado</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Cozinha equipada</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Piscina privada</li>
-            </ul>
-            <div class="mt-4">
-              <p class="text-xl font-semibold">Preço: A partir de MZN 6,000 / USD 90 por noite</p>
-              <button class="bg-orange-600 mt-4 bg-accent text-white py-2 px-4 rounded-lg hover:bg-orange-400 w-full">
-                Ver Disponibilidade
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Suíte -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
-          <div class="swiper mySwiperaccomodations w-full h-72 sm:h-80 md:h-96 lg:h-120">
-            <!-- Wrapper para os slides -->
-            <div class="swiper-wrapper">
-              <!-- Slide 1 -->
-              <div class="swiper-slide">
-                <img class="w-full h-full object-cover" src="../assets/img/image_1.jpeg"
-                  alt="Quarto Suíte (Em Equipamento)">
-              </div>
-              <!-- Slide 2 -->
-              <div class="swiper-slide">
-                <img class="w-full h-full object-cover" src="../assets/img/image_1.jpeg"
-                  alt="Quarto Suíte (Em Equipamento)">
-              </div>
-            </div>
-
-            <!-- Setas de navegação -->
-            <div class="swiper-button-next text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
-            <div class="swiper-button-prev text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
-
-            <!-- Paginação (pontos) -->
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-accent">Quarto Suíte</h3>
-            <p class="text-gray-700 mt-2">7 Quartos Suíte equipados com cama de casal, banheiro privativo e varanda.</p>
-            <ul class="mt-4 text-gray-700">
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> 1 Cama de casal</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Wi-Fi gratuito</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Ar-condicionado</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Banheiro privativo</li>
-            </ul>
-            <div class="mt-4">
-              <p class="text-xl font-semibold">Preço: A partir de MZN 4,200 / USD 63 por noite</p>
-              <button class="bg-orange-600 mt-4 bg-accent text-white py-2 px-4 rounded-lg hover:bg-orange-400 w-full">
-                Ver Disponibilidade
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Suíte (Em Equipamento) -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
-          <div class="swiper mySwiperaccomodations w-full h-72 sm:h-80 md:h-96 lg:h-120">
-            <!-- Wrapper para os slides -->
-            <div class="swiper-wrapper">
-              <!-- Slide 1 -->
-              <div class="swiper-slide">
-                <img class="w-full h-full object-cover" src="../assets/img/image_1.jpeg" onclick="openModal(this)"
-                  alt="Quarto Suíte (Em Equipamento)">
-              </div>
-              <!-- Slide 2 -->
-              <div class="swiper-slide">
-                <img class="w-full h-full object-cover" src="../assets/img/image_1.jpeg" onclick="openModal(this)"
-                  alt="Quarto Suíte (Em Equipamento)">
-              </div>
-            </div>
-
-            <!-- Setas de navegação -->
-            <div class="swiper-button-next text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
-            <div class="swiper-button-prev text-white bg-black bg-opacity-50 p-2 rounded-full"></div>
-
-            <!-- Paginação (pontos) -->
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold text-accent">Quarto Suíte (Em Equipamento)</h3>
-            <p class="text-gray-700 mt-2">3 Quartos Suíte ainda por equipar, com vista para o jardim e piscina.</p>
-            <ul class="mt-4 text-gray-700">
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Cama de casal</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Wi-Fi gratuito</li>
-              <li><i class="bi bi-check-circle-fill mr-2 text-accent"></i> Ar-condicionado</li>
-            </ul>
-            <div class="mt-4">
-              <p class="text-xl font-semibold">Preço: A partir de MZN 3,600 / USD 54 por noite</p>
-              <button class="bg-orange-600 mt-4 bg-accent text-white py-2 px-4 rounded-lg hover:bg-orange-400 w-full">
-                Ver Disponibilidade
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
 
 
@@ -189,35 +195,36 @@
         </div>
       </div>
 
-      <!-- Comodidades -->
-      <div class="text-center mt-12">
-        <h2 class="text-3xl font-bold text-accent mb-4" data-aos="fade-up" data-aos-duration="1200">Comodidades</h2>
-        <p class="text-lg text-gray-700" data-aos="fade-up" data-aos-duration="1200">O que oferecemos para sua
-          comodidade:</p>
-        <div class="flex justify-center space-x-8 mt-6">
-          <div class="flex flex-col items-center">
-            <i data-aos="fade-up" data-aos-duration="1200" class="bi bi-water text-4xl text-accent"></i>
-            <span class="text-gray-700 mt-2" data-aos="fade-up" data-aos-duration="1200">Piscina Privada</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <i data-aos="fade-up" data-aos-duration="1200" class="bi bi-car-front text-4xl text-accent"></i>
-            <span class="text-gray-700 mt-2" data-aos="fade-up" data-aos-duration="1200">Estacionamento Privado</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <i data-aos="fade-up" data-aos-duration="1200" class="bi bi-bar-chart text-4xl text-accent"></i>
-            <span class="text-gray-700 mt-2" data-aos="fade-up" data-aos-duration="1200">Espaço para Conferências</span>
-          </div>
-        </div>
-      </div>
+<!-- Amenities -->
+<div class="text-center py-12">
+  <h2 class="text-3xl font-bold text-accent mb-4" data-aos="fade-up" data-aos-duration="1200">Amenities</h2>
+  <p class="text-lg text-gray-700" data-aos="fade-up" data-aos-duration="1200">What we offer for your convenience:</p>
+  <div class="flex justify-center space-x-8">
+    <div class="flex flex-col items-center">
+      <i data-aos="fade-up" data-aos-duration="1200" class="bi bi-water text-4xl text-accent"></i>
+      <span class="text-gray-700 mt-2" data-aos="fade-up" data-aos-duration="1200">Private Pool</span>
+    </div>
+    <div class="flex flex-col items-center">
+      <i data-aos="fade-up" data-aos-duration="1200" class="bi bi-car-front text-4xl text-accent"></i>
+      <span class="text-gray-700 mt-2" data-aos="fade-up" data-aos-duration="1200">Private Parking</span>
+    </div>
+    <div class="flex flex-col items-center">
+      <i data-aos="fade-up" data-aos-duration="1200" class="bi bi-bar-chart text-4xl text-accent"></i>
+      <span class="text-gray-700 mt-2" data-aos="fade-up" data-aos-duration="1200">Conference Room</span>
+    </div>
+  </div>
+</div>
+
     </div>
   </section>
 
   <!-- Footer -->
   <main-footer></main-footer>
 
-    <!-- GTranslate widget -->
-    <script>window.gtranslateSettings = {"default_language":"en","languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper"}</script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- GTranslate widget -->
+  <script>window.gtranslateSettings = { "default_language": "en", "languages": ["en", "pt"], "wrapper_selector": ".gtranslate_wrapper" }</script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -233,7 +240,6 @@
       menuMobile.classList.toggle('hidden');
     });
   </script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper('.mySwiperaccomodations', {
       slidesPerView: 1,           // Quantidade de slides visíveis
@@ -268,7 +274,7 @@
     }
 
   </script>
-  <!-- <script src="../../script.js"></script> -->
+
 </body>
 
 </html>

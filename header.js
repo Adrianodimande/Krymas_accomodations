@@ -2,7 +2,9 @@ class Header extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
- 
+    <div class="gtranslate_wrapper fixed bottom-5 right-5 z-50 bg-[#F28705] p-3 rounded-full shadow-lg cursor-pointer">
+
+    </div>
     <header class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
     <div class="max-w-7xl mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
@@ -24,7 +26,7 @@ class Header extends HTMLElement {
 
             <!-- Botão de Ação (Agendar Visita) -->
             <div class="hidden md:block" data-aos="fade-down" data-aos-duration="1500">
-                <a href="#visit" class="bg-[#F28705] text-white py-2 px-6 rounded-lg hover:bg-[#F28705] transition duration-300">Schedule a Visit</a>
+                <a href="location_contact.html#contato" class="bg-[#F28705] text-white py-2 px-6 rounded-lg hover:bg-[#F28705] transition duration-300">Schedule a Visit</a>
             </div>
 
             <!-- Botão de Menu para Dispositivos Móveis -->

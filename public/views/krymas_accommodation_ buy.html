@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Link para o CSS do Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Script do Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -141,7 +146,7 @@
                 <!-- Highlight 1 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4" src="/public/assets/img/image_1.jpeg"
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
                         alt="24/7 Security">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">24/7 Security</h3>
                     <p class="text-gray-800">Fully enclosed with 24-hour security, providing peace of mind and
@@ -150,7 +155,7 @@
                 <!-- Highlight 2 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4" src="/public/assets/img/image_1.jpeg"
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
                         alt="Sustainability">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Sustainability</h3>
                     <p class="text-gray-800">Equipped with sustainable systems, including a water borehole and
@@ -159,7 +164,7 @@
                 <!-- Highlight 3 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4" src="/public/assets/img/image_1.jpeg"
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" src="/public/assets/img/image_1.jpeg" onclick="openModal(this)"
                         alt="Prime Location">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Prime Location</h3>
                     <p class="text-gray-800">In the heart of Ponta do Ouro, with easy access to all regional
@@ -192,7 +197,7 @@
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img src="/public/assets/img/image_1.jpeg" alt="T2 House"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">4 T2 Houses</h3>
                     <p class="text-white">Fully equipped houses with 2 bedrooms and modern architecture, perfect for
                         those seeking practicality and comfort.</p>
@@ -202,8 +207,8 @@
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img src="/public/assets/img/image_1.jpeg" alt="Suites"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
-                    <h3 class="text-xl font-semibold text-white mb-3">7 Suites</h3>
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
+                    <h3 class="text-xl font-semibold text-white mb-3 ">7 Suites</h3>
                     <p class="text-white">Suites with high-quality finishes, spacious and equipped with all the
                         amenities to provide total comfort for residents.</p>
                 </div>
@@ -212,7 +217,7 @@
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img src="/public/assets/img/image_1.jpeg" alt="Swimming Pool"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Private Pool</h3>
                     <p class="text-white">Relax and enjoy unique moments in the private pool of the complex, with total
                         privacy and comfort.</p>
@@ -222,7 +227,7 @@
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img src="/public/assets/img/image_1.jpeg" alt="Parking"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Secure Parking</h3>
                     <p class="text-white">Spacious and secure parking with easy access for residents and visitors,
                         providing convenience and safety.</p>
@@ -232,7 +237,7 @@
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img src="/public/assets/img/image_1.jpeg" alt="Gourmet Space"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Gourmet Space</h3>
                     <p class="text-white">An ideal space to gather friends and family, with a fully equipped kitchen and
                         an outdoor area to enjoy meals al fresco.</p>
@@ -242,7 +247,7 @@
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img src="/public/assets/img/image_1.jpeg" alt="Laundry"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg">
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer" onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Fully Equipped Laundry</h3>
                     <p class="text-white">A modern and well-equipped laundry room, with all the necessary resources for
                         everyday routines.</p>
@@ -255,7 +260,7 @@
     <section id="galery" class="bg-[#F28705] text-white py-24">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-extrabold text-white pb-5" data-aos="fade-up" data-aos-duration="1000">
-                Galeria de Imagens</h2>
+               Gallery</h2>
             <p class="md:text-xl mb-8 leading-relaxed animate__animated animate__fadeInUp" data-aos="fade-up"
                 data-aos-duration="1200">
                 Explore a Visual Journey Through Our Stunning Complex. Immerse Yourself in High-Quality Images
@@ -268,19 +273,19 @@
                   <!-- Slide 1 -->
                   <div class="swiper-slide">
                     <div class="relative w-full h-64">
-                      <img src="/public/assets/img/image_1.jpeg" alt="Imagem 1" class="w-full h-full object-cover" />
+                      <img src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 1" class="w-full h-full object-cover cursor-pointer" />
                     </div>
                   </div>
                   <!-- Slide 2 -->
                   <div class="swiper-slide">
                     <div class="relative w-full h-64">
-                      <img src="/public/assets/img/image_1.jpeg" alt="Imagem 2" class="w-full h-full object-cover" />
+                      <img src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 2" class="w-full h-full object-cover cursor-pointer" />
                     </div>
                   </div>
                   <!-- Slide 3 -->
                   <div class="swiper-slide">
                     <div class="relative w-full h-64">
-                      <img src="/public/assets/img/image_1.jpeg" alt="Imagem 3" class="w-full h-full object-cover" />
+                      <img src="/public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 3" class="w-full h-full object-cover cursor-pointer" />
                     </div>
                   </div>
                 </div>
@@ -291,6 +296,7 @@
                 <div class="swiper-pagination"></div>
               </div>
         </div>
+
 
         <!-- Lightbox Modal -->
         <div id="lightbox" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center hidden z-50">
@@ -305,7 +311,20 @@
 
 
 
+  <!-- Modal de Imagem -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden justify-center items-center z-50">
+        <div class="relative w-full h-auto bg-[#00000075] rounded-lg shadow-lg">
+            <!-- Imagem -->
+            <img id="modalImage" src="" alt="Imagem em tela cheia"
+                class="max-w-full max-h-screen object-contain mx-auto my-auto">
 
+            <!-- Botão de Fechar -->
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 bg-[#F28705] text-white py-2 px-4 rounded-full text-lg font-semibold hover:bg-yellow-600">
+                Fechar
+            </button>
+        </div>
+    </div>
 
     <section class="py-24" data-aos="fade-up" data-aos-duration="1000" id="location">
         <div class="max-w-7xl mx-auto px-6 text-center">
@@ -416,8 +435,8 @@
                 <!-- Imagem do Complexo -->
                 <div class="w-full lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-up" data-aos-duration="1200">
                     <div class="relative w-full h-96 lg:h-auto">
-                        <img src="/public/assets/img/image_1.jpeg" alt="Complexo"
-                            class="w-full h-full object-cover rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out">
+                        <img src="/public/assets/img/image_1.jpeg"  onclick="openModal(this)" alt="Complexo"
+                            class="w-full h-full object-cover rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out cursor-pointer">
                     </div>
                 </div>
             </div>
@@ -503,6 +522,12 @@
     </footer>
 
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+  
+    </script>
+
+
         <!-- GTranslate widget -->
         <script>window.gtranslateSettings = {"default_language":"en","languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper"}</script>
         <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
@@ -512,8 +537,6 @@
         AOS.init();
     </script>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../../script.js"></script>
     <!-- Script to Toggle Mobile Menu -->
     <script>
@@ -525,7 +548,38 @@
         });
     </script>
 
-
+<script>
+            const swiper = new Swiper('.mySwiper', {
+          loop: true, // Para loops infinitos
+          slidesPerView: 1, // Exibe 1 slide por vez
+          spaceBetween: 10, // Espaço entre os slides
+      
+          // Adiciona navegação (botões)
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // Adiciona paginação
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+      
+          // Responsividade
+          breakpoints: {
+            // Quando a largura for maior que 640px
+            640: {
+              slidesPerView: 2, // Exibe 2 slides por vez
+            },
+            // Quando a largura for maior que 1024px
+            1024: {
+              slidesPerView: 3, // Exibe 3 slides por vez
+            },
+          },
+        });
+        
+</script>
 
 </body>
 
