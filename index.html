@@ -16,6 +16,10 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
+   <!-- Incluindo o script do EmailJS -->
+   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+
     <!-- Bootstrap Icons CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -57,7 +61,7 @@
                 <!-- Call to Action Button (Schedule a Visit) -->
                 <div class="hidden md:block" data-aos="fade-down" data-aos-duration="1500">
                     <a href="#visit"
-                        class="bg-[#F28705] text-white py-2 px-6 rounded-lg hover:bg-[#F28705] transition duration-300">Schedule
+                        class="bg-[#F28705] text-white py-2 px-6 rounded-full hover:bg-[#F28705] transition duration-300">Schedule
                         a Visit</a>
                 </div>
 
@@ -85,8 +89,10 @@
                 <a href="#footer" class="block text-gray-700 hover:text-[#F28705] transition duration-300">Contact</a>
                 <div class="mt-6">
                     <a href="#visit"
-                        class="block bg-[#F28705] text-white py-2 px-6 rounded-lg hover:bg-[#F28705] transition duration-300">Schedule
-                        a Visit</a>
+                        class="bg-transparent border-2 border-[#F28705] hover:bg-[#F28705] hover:text-white text-[#F28705] py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
+                        data-aos="zoom-in" data-aos-duration="2000">
+                        Schedule a Visit
+                    </a>
                 </div>
             </div>
         </div>
@@ -99,119 +105,121 @@
     <!-- Hero Section -->
     <section id="main" class="relative h-screen">
         <!-- Image with overlay -->
-        <img 
-            data-src="public/assets/img/image_1.jpeg" 
-            alt="Complex" 
-            class="absolute inset-0 w-full h-full object-cover" 
-        />
+        <img data-src="public/assets/img/image_1.jpeg" alt="Complex"
+            class="absolute inset-0 w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for contrast -->
-    
+
         <!-- Content -->
         <div class="container mx-auto h-full flex flex-col justify-center text-center text-white px-6 sm:px-12 z-10">
             <!-- Title -->
-            <h1 
-                class="text-4xl sm:text-5xl font-extrabold leading-tight drop-shadow-lg" 
-                data-aos="fade-up" 
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight drop-shadow-lg" data-aos="fade-up"
                 data-aos-duration="2000">
                 The Best Deal of Your Life is Here
             </h1>
-    
+
             <!-- Price -->
-            <p 
-                class="text-3xl sm:text-4xl font-bold text-[#F28705] drop-shadow-xl mt-4" 
-                data-aos="fade-up" 
+            <p class="text-3xl sm:text-4xl font-bold text-[#F28705] drop-shadow-xl mt-4" data-aos="fade-up"
                 data-aos-duration="2000">
-                <span 
-                    class="text-4xl sm:text-5xl font-extrabold" 
-                    data-aos="fade-up" 
-                    data-aos-duration="2000">
+                <span class="text-4xl sm:text-5xl font-extrabold" data-aos="fade-up" data-aos-duration="2000">
                     This could be yours for only
                 </span>
                 <br>
-                <span 
-                    id="price" 
-                    class="text-5xl sm:text-6xl font-extrabold text-white py-4" 
-                    data-aos="fade-up" 
+                <span id="price" class="text-5xl sm:text-6xl font-extrabold text-white py-4" data-aos="fade-up"
                     data-aos-duration="2000">
-                    $750,000
+                    $750.000.00
                 </span>
                 <br>
-                <span 
-                    id="negotiable" 
-                    class="text-lg sm:text-xl font-semibold opacity-80" 
-                    data-aos="fade-up" 
+                <span id="negotiable" class="text-lg sm:text-xl font-semibold opacity-80" data-aos="fade-up"
                     data-aos-duration="2000">
                     Negotiable
                 </span>
             </p>
-    
+
             <!-- Business Benefit -->
-            <p 
-                class="text-lg sm:text-2xl mb-8 max-w-lg mx-auto opacity-90 mt-6" 
-                data-aos="fade-up" 
+            <p class="text-lg sm:text-2xl mb-8 max-w-lg mx-auto opacity-90 mt-6" data-aos="fade-up"
                 data-aos-duration="2000">
-                Take advantage of the opportunity for an excellent financial return with a strategic investment. The time to act is now!
+                Take advantage of the opportunity for an excellent financial return with a strategic investment. The
+                time to act is now!
             </p>
-    
+
             <!-- Call to Action Buttons -->
             <div class="flex justify-center gap-4 mt-6">
-                <a 
-                    href="#detail1" 
-                    class="bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105" 
-                    data-aos="zoom-in" 
-                    data-aos-duration="2000">
+                <a href="#detail1"
+                    class="bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
+                    data-aos="zoom-in" data-aos-duration="2000">
                     Discover More
                 </a>
-                <a 
-                    href="#visit" 
-                    class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105" 
-                    data-aos="zoom-in" 
-                    data-aos-duration="2000">
+                <a href="#visit"
+                    class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
+                    data-aos="zoom-in" data-aos-duration="2000">
                     Schedule a Visit
                 </a>
             </div>
         </div>
     </section>
-    
 
-    <section id="detail1" class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] text-white py-24" id="about">
+
+    <section id="detail1" class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] text-white py-24"
+        id="about">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <!-- Title -->
             <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate__animated animate__fadeInUp"
                 data-aos="fade-up" data-aos-duration="1000">Acquire the Krymas Complex</h2>
             <p class="md:text-xl mb-8 leading-relaxed animate__animated animate__fadeInUp" data-aos="fade-up"
                 data-aos-duration="1200">
-                The Krymas Complex is a unique opportunity to acquire a luxury property in one of the most desirable locations in the region, close to the beach. With modern design, unmatched comfort, and a strategic location, it's the perfect investment for those seeking quality of life, exclusivity, and profitability. Don’t miss the chance to secure your space in this paradise.
+                The Krymas Complex is a unique opportunity to acquire a luxury property in one of the most desirable
+                locations in the region, close to the beach. With modern design, unmatched comfort, and a strategic
+                location, it's the perfect investment for those seeking quality of life, exclusivity, and profitability.
+                Don’t miss the chance to secure your space in this paradise.
             </p>
-    
+
+
             <!-- Highlights -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+                <!-- Highlight 4 -->
+                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
+                    data-aos="fade-up" data-aos-duration="1200">
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
+                        data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Security">
+                    <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Security</h3>
+                    <p class="text-gray-800">
+                        The Krymas Complex is situated in a peaceful and secure area, offering a serene environment
+                        where you can feel completely at ease.
+                    </p>
+                </div>
                 <!-- Highlight 1 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
-                        data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Comfort">
+                        data-src="public/assets/img/image (16).jpeg" onclick="openModal(this)" alt="Comfort">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Comfort</h3>
-                    <p class="text-gray-800">Every detail is designed to offer maximum comfort and well-being, making it the perfect investment for those seeking tranquility.</p>
+                    <p class="text-gray-800">Every detail is designed to offer maximum comfort and well-being, making it
+                        the perfect investment for those seeking tranquility.</p>
                 </div>
                 <!-- Highlight 2 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
-                        data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Elegance">
+                        data-src="public/assets/img/image (15).jpeg" onclick="openModal(this)" alt="Elegance">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Elegance</h3>
-                    <p class="text-gray-800">The Krymas Complex blends modern aesthetics with timeless charm, ensuring an investment that will never go out of style.</p>
+                    <p class="text-gray-800">The Krymas Complex blends modern aesthetics with timeless charm, ensuring
+                        an investment that will never go out of style.</p>
                 </div>
                 <!-- Highlight 3 -->
                 <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
-                        data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Location">
+                        data-src="public/assets/img/image (7).jpeg" onclick="openModal(this)" alt="Location">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Location</h3>
-                    <p class="text-gray-800">With a prime location, close to the beach and major attractions, this is the perfect place to invest and secure your future.</p>
+                    <p class="text-gray-800">With a prime location, close to the beach and major attractions, this is
+                        the perfect place to invest and secure your future.</p>
                 </div>
+
+
+
             </div>
-    
+
             <!-- Video -->
             <div class="w-full mt-12">
                 <iframe class="w-full rounded-lg h-[400px]"
@@ -221,16 +229,18 @@
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                     allowFullScreen="true"></iframe>
             </div>
-    
+
             <!-- Button -->
             <div class="mt-8">
-                <a href="#contact" class="bg-white text-[#F28705] font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
-                    Acquire Now
+                <a href="#visit"
+                    class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
+                    data-aos="zoom-in" data-aos-duration="2000">
+                    Schedule a Visit
                 </a>
             </div>
         </div>
     </section>
-    
+
 
     <section id="detail2" class="bg-white py-24" id="caracteristicas">
         <div class="max-w-7xl mx-auto px-6 text-center">
@@ -238,28 +248,31 @@
                 data-aos-duration="1000">Features and Amenities</h2>
             <p class="md:text-xl mb-8 leading-relaxed animate__animated animate__fadeInUp" data-aos="fade-up"
                 data-aos-duration="1200">
-                Discover the perfect combination of luxury, comfort, and functionality. Our complex is thoughtfully designed to provide an exceptional living experience with premium features and top-notch amenities.
+                Discover the perfect combination of luxury, comfort, and functionality. Our complex is thoughtfully
+                designed to provide an exceptional living experience with premium features and top-notch amenities.
             </p>
             <!-- Feature List -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- Card 1 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="T2 House"
+                    <img data-src="public/assets/img/image (10).jpeg" alt="T2 House"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
                         onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">4 T2 Houses</h3>
-                    <p class="text-white">Each house Fully equipped  with 2 bedrooms, offering modern architecture and practicality for everyday living.</p>
+                    <p class="text-white">Each house Fully equipped with 2 bedrooms, offering modern architecture and
+                        practicality for everyday living.</p>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Suites"
+                    <img data-src="public/assets/img/image (11).jpeg" alt="Suites"
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
                         onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3 ">3 Fully Equipped Suites</h3>
-                    <p class="text-white">Spacious suites with premium finishes and modern amenities for maximum comfort.</p>
+                    <p class="text-white">Spacious suites with premium finishes and modern amenities for maximum
+                        comfort.</p>
                 </div>
 
                 <!-- Card 3 -->
@@ -269,7 +282,8 @@
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
                         onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">7 Suites</h3>
-                    <p class="text-white">Additional suites ready to be customized to suit your needs and preferences.</p>
+                    <p class="text-white">Additional suites ready to be customized to suit your needs and preferences.
+                    </p>
                 </div>
 
                 <!-- Card 4 -->
@@ -279,7 +293,8 @@
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
                         onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Private Pool</h3>
-                    <p class="text-white">Enjoy ultimate relaxation in the private pool, offering complete privacy and luxury.</p>
+                    <p class="text-white">Enjoy ultimate relaxation in the private pool, offering complete privacy and
+                        luxury.</p>
                 </div>
 
                 <!-- Card 5 -->
@@ -300,7 +315,8 @@
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
                         onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Exclusive Bar</h3>
-                    <p class="text-white">A fully equipped bar, perfect for hosting social gatherings and celebrations.</p>
+                    <p class="text-white">A fully equipped bar, perfect for hosting social gatherings and celebrations.
+                    </p>
                 </div>
 
 
@@ -311,7 +327,8 @@
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
                         onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3"> Office</h3>
-                    <p class="text-white">A dedicated office space designed for productivity and focus, equipped with all essential features.</p>
+                    <p class="text-white">A dedicated office space designed for productivity and focus, equipped with
+                        all essential features.</p>
                 </div>
 
 
@@ -326,15 +343,16 @@
                 </div>
 
 
-                  <!-- Card 9 -->
-                  <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
-                  data-aos="fade-up" data-aos-duration="1200">
-                  <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
-                      class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                      onclick="openModal(this)">
-                  <h3 class="text-xl font-semibold text-white mb-3">Laundry</h3>
-                  <p class="text-white">A modern laundry room with all the essential resources to simplify your daily routines.</p>
-              </div>
+                <!-- Card 9 -->
+                <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
+                    data-aos="fade-up" data-aos-duration="1200">
+                    <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
+                        onclick="openModal(this)">
+                    <h3 class="text-xl font-semibold text-white mb-3">Laundry</h3>
+                    <p class="text-white">A modern laundry room with all the essential resources to simplify your daily
+                        routines.</p>
+                </div>
 
                 <!-- Card 10 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
@@ -347,7 +365,7 @@
                 </div>
 
 
-                
+
                 <!-- Card 10 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
@@ -355,7 +373,8 @@
                         class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
                         onclick="openModal(this)">
                     <h3 class="text-xl font-semibold text-white mb-3">Staff Room</h3>
-                    <p class="text-white">Dedicated accommodation for staff members, ensuring comfort and convenience.</p>
+                    <p class="text-white">Dedicated accommodation for staff members, ensuring comfort and convenience.
+                    </p>
                 </div>
             </div>
         </div>
@@ -449,8 +468,9 @@
                         data-aos-duration="1000">
                         <!-- Google Maps Embed -->
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6042.222250685471!2d32.598749947986875!3d-25.779584432606217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squinta%20melucha!5e0!3m2!1spt-PT!2smz!4v1721941139352!5m2!1spt-PT!2smz"
-                            class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.9868221587324!2d32.87627337111015!3d-26.840790568048774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee48f3d58d68fc7%3A0xcb4d88e63276f60c!2sKrymas%20Accommodation!5e0!3m2!1spt-PT!2smz!4v1736844327031!5m2!1spt-PT!2smz"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
@@ -499,44 +519,47 @@
                     </p>
 
                     <!-- Formulário de Contato -->
-                    <form action="#" method="POST"
-                        class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out"
-                        data-aos="fade-up" data-aos-duration="1200">
-                        <div class="mb-6">
-                            <label for="name" class="block text-sm font-semibold text-gray-700">Full Name</label>
-                            <input type="text" id="name" name="name" required
-                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out"
-                                placeholder="John Doe">
-                        </div>
+<form id="contact-form" action="#" method="POST"
+class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out"
+data-aos="fade-up" data-aos-duration="1200">
+<div class="mb-6">
+    <label for="name" class="block text-sm font-semibold text-gray-700">Full Name</label>
+    <input type="text" id="name" name="name" required
+        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+        placeholder="John Doe">
+</div>
 
-                        <div class="mb-6">
-                            <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out"
-                                placeholder="example@email.com">
-                        </div>
+<div class="mb-6">
+    <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
+    <input type="email" id="email" name="email" required
+        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+        placeholder="example@email.com">
+</div>
 
-                        <div class="mb-6">
-                            <label for="phone" class="block text-sm font-semibold text-gray-700">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required
-                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out"
-                                placeholder="(123) 456-7890">
-                        </div>
+<div class="mb-6">
+    <label for="phone" class="block text-sm font-semibold text-gray-700">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required
+        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+        placeholder="(123) 456-7890">
+</div>
 
-                        <div class="mb-6">
-                            <label for="message" class="block text-sm font-semibold text-gray-700">Your Message</label>
-                            <textarea id="message" name="message" rows="4" required
-                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out"
-                                placeholder="Write your message here..."></textarea>
-                        </div>
+<div class="mb-6">
+    <label for="message" class="block text-sm font-semibold text-gray-700">Your Message</label>
+    <textarea id="message" name="message" rows="4" required
+        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+        placeholder="Write your message here..."></textarea>
+</div>
 
-                        <div class="flex justify-center">
-                            <button type="submit"
-                                class="w-full md:w-auto bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-6 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105">
-                                Submit Request
-                            </button>
-                        </div>
-                    </form>
+<div class=" w-full">
+    <button type="submit"
+        class="w-96 md:w-96 bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-6 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+        Submit 
+    </button>
+</div>
+</form>
+
+
+
                 </div>
 
 
@@ -564,8 +587,14 @@
                     <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">
                         Main Street, Ponta do Ouro,
                         Mozambique</p>
-                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">📞 (+258) 123 456 789</p>
-                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">📧 info@complexo.com</p>
+                        <br>
+                  
+                    <a href="tel:+258878296482" class="text-lg hover:underline" data-aos="fade-up" data-aos-duration="1200" target="_blank">📞 (+258) 87
+                        829 6482</a>
+                        <br>
+                        <br>
+                    <a href="mailto: Krymasaccommodation258@gmail.com" class="text-lg hover:underline" data-aos="fade-up"
+                        data-aos-duration="1200">📧 Krymasaccommodation258@gmail.com</a>
                 </div>
 
                 <!-- Redes Sociais -->
@@ -593,32 +622,14 @@
                 </div>
 
                 <!-- Links Legais -->
-                <div class="space-y-6">
-                    <h3 class="text-3xl font-semibold text-[#F29F05]" data-aos="fade-up" data-aos-duration="1200">Legal
-                    </h3>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="/privacy-policy" data-aos="fade-up" data-aos-duration="1200"
-                                class="text-lg hover:text-indigo-400 transition-all duration-300">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="/terms-of-use" data-aos="fade-up" data-aos-duration="1200"
-                                class="text-lg hover:text-indigo-400 transition-all duration-300">Terms of Use</a>
-                        </li>
-                        <li>
-                            <a href="/disclaimer" data-aos="fade-up" data-aos-duration="1200"
-                                class="text-lg hover:text-indigo-400 transition-all duration-300">Disclaimer</a>
-                        </li>
-                    </ul>
-                </div>
+                
 
                 <!-- Assinatura -->
                 <div class="text-center lg:text-right mt-6 lg:mt-0">
                     <h3 class="text-3xl font-semibold text-[#F29F05]" data-aos="fade-up" data-aos-duration="1200">Get
                         in Touch</h3>
-                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">We'd love to hear from you! Contact
-                        us now to learn more about our project.</p>
-                    <a href="#contact-form"
+                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">Schedule a visit today and discover why the Krymas Complex is your ideal investment</p>
+                    <a href="#visit"
                         class="mt-4 inline-block px-8 py-3 bg-[#F29F05] text-white rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-[#F28705]"
                         data-aos="fade-up" data-aos-duration="1200">Contact Us</a>
                 </div>
@@ -626,11 +637,20 @@
 
             <!-- Copyright -->
             <div class="mt-12 text-center text-sm opacity-70" data-aos="fade-up" data-aos-duration="1200">
-                <p>&copy; 2024 Complexo Ponta do Ouro. All Rights Reserved.</p>
+                <p id="terms"></p>
             </div>
         </div>
     </footer>
 
+    <script>
+var terms=document.getElementById('terms');
+var year=new Date().getFullYear();
+terms.innerHTML=
+
+'&copy; ' + year + ' Complexo Ponta do Ouro. All Rights Reserved. <br>' +
+'Created by Adriano Luís Dimande';
+;
+    </script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -690,6 +710,26 @@
             },
         });
 
+    </script>
+
+<script type="text/javascript">
+    // Initialize EmailJS
+    emailjs.init("muV2bm4Y9GbE7maIP");
+    
+    // Add event listener to form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        // Use EmailJS to send the form data
+        emailjs.sendForm('service_jl6em4k', 'template_7q0tp4k', this)
+            .then(function(response) {
+                console.log('Success:', response);
+                alert("Your message has been sent successfully!");
+            }, function(error) {
+                console.log('Error:', error);
+                alert("Something went wrong. Please try again later.");
+            });
+    });
     </script>
 
 </body>
