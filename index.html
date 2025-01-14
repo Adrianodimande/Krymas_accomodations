@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/output.css">
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="shortcut icon" href="public/assets/logo.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Swiper CSS -->
-    <!-- Link para o CSS do Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <!-- Script do Swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-   <!-- Incluindo o script do EmailJS -->
-   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <head>
+        <!-- Metadados essenciais -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Krymas Accommodation - Um complexo exclusivo à venda, localizado perto da praia, com piscina, comodidades modernas e uma vista incrível.">
+        <meta name="keywords" content="Krymas Accommodation, complexo à venda, praia, piscina, resort, vista para o mar, propriedade de luxo">
+        <meta name="author" content="Krymas Accommodation">
+        <meta name="robots" content="index, follow">
     
-
-    <!-- Bootstrap Icons CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-
-    <title>buy</title>
-</head>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="public/assets/logo.png" type="image/x-icon">
+    
+        <!-- Título da página -->
+        <title>Krymas Accommodation | Complexo de Luxo Perto da Praia</title>
+    
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="public/css/output.css">
+        <link rel="stylesheet" href="public/css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
+        <!-- Scripts JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+        <!-- Tags de Open Graph para redes sociais -->
+        <meta property="og:title" content="Krymas Accommodation | Complexo de Luxo Perto da Praia">
+        <meta property="og:description" content="Descubra o Krymas Accommodation - um complexo à venda perto da praia, com piscina, acomodações modernas e muito mais. Uma oportunidade única!">
+        <meta property="og:image" content="public/assets/logo.png">
+        <meta property="og:url" content="https://www.krymasaccommodation.com">
+        <meta property="og:type" content="website">
+        
+    
+        <!-- Tag do Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Krymas Accommodation | Complexo de Luxo Perto da Praia">
+        <meta name="twitter:description" content="Descubra o Krymas Accommodation - um complexo à venda perto da praia, com piscina, acomodações modernas e muito mais. Uma oportunidade única!">
+        <meta name="twitter:image" content="public/assets/logo.png">
+    </head>
+    
 
 <body class="overflow-x-hidden">
     <!-- preloader  -->
@@ -40,34 +54,32 @@
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
-                <!-- Logo -->
                 <div class="text-xl font-semibold text-[#F28705]" data-aos="fade-down" data-aos-duration="1000">
-                    <a href="#">
-                        <img class="w-10 h-10" src="public/assets/logo.png" alt="" srcset="">
+                    <a href="#home">
+                        <img class="w-10 h-10" src="public/assets/logo.png" alt="Logo of the Company" srcset="">
                     </a>
                 </div>
-
+    
                 <!-- Navigation Menu -->
                 <nav class="hidden md:flex space-x-8" data-aos="fade-down" data-aos-duration="1500">
-                    <a href="#main" class="text-gray-700 hover:text-[#F28705] transition duration-300">Home</a>
-                    <a href="#detail1" class="text-gray-700 hover:text-[#F28705] transition duration-300">About</a>
-                    <a href="#detail2" class="text-gray-700 hover:text-[#F28705] transition duration-300">more</a>
-                    <a href="#galery" class="text-gray-700 hover:text-[#F28705] transition duration-300">Gallery</a>
-                    <a href="#location" class="text-gray-700 hover:text-[#F28705] transition duration-300">Location</a>
-                    <a href="#footer" class="text-gray-700 hover:text-[#F28705] transition duration-300">Contact</a>
+                    <a href="#main" class="text-gray-700 hover:text-[#F28705] transition duration-300" title="Home Page">Home</a>
+                    <a href="#detail1" class="text-gray-700 hover:text-[#F28705] transition duration-300" title="Learn More About Us">About Us</a>
+                    <a href="#detail2" class="text-gray-700 hover:text-[#F28705] transition duration-300" title="Discover Our Features">Features</a>
+                    <a href="#galery" class="text-gray-700 hover:text-[#F28705] transition duration-300" title="View Our Gallery">Gallery</a>
+                    <a href="#location" class="text-gray-700 hover:text-[#F28705] transition duration-300" title="Find Our Location">Location</a>
+                    <a href="#footer" class="text-gray-700 hover:text-[#F28705] transition duration-300" title="Contact Us">Contact</a>
                 </nav>
-
-
+    
                 <!-- Call to Action Button (Schedule a Visit) -->
                 <div class="hidden md:block" data-aos="fade-down" data-aos-duration="1500">
                     <a href="#visit"
-                        class="bg-[#F28705] text-white py-2 px-6 rounded-full hover:bg-[#F28705] transition duration-300">Schedule
-                        a Visit</a>
+                        class="bg-[#F28705] text-white py-2 px-6 rounded-full hover:bg-[#F28705] transition duration-300"
+                        title="Schedule a Visit">Schedule a Visit</a>
                 </div>
-
+    
                 <!-- Mobile Menu (Hamburger) -->
                 <div class="md:hidden flex items-center" data-aos="fade-down" data-aos-duration="1500">
-                    <button id="menu-button" class="text-gray-700 hover:text-[#F28705] focus:outline-none">
+                    <button id="menu-button" class="text-gray-700 hover:text-[#F28705] focus:outline-none" aria-label="Open Mobile Menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -76,47 +88,45 @@
                     </button>
                 </div>
             </div>
-
+    
             <!-- Mobile Menu - Modal -->
             <div id="menu-mobile" class="md:hidden mt-4 hidden space-y-4 bg-white p-6 rounded-lg shadow-lg"
                 data-aos="fade-down" data-aos-duration="1500">
-                <a href="#main" class="block text-gray-700 hover:text-[#F28705] transition duration-300">About</a>
-                <a href="#detail1" class="block text-gray-700 hover:text-[#F28705] transition duration-300">About</a>
-                <a href="#detail2" class="block text-gray-700 hover:text-[#F28705] transition duration-300">Features</a>
-                <a href="#galery" class="block text-gray-700 hover:text-[#F28705] transition duration-300">Gallery</a>
-                <a href="#location"
-                    class="block text-gray-700 hover:text-[#F28705] transition duration-300">Location</a>
-                <a href="#footer" class="block text-gray-700 hover:text-[#F28705] transition duration-300">Contact</a>
+                <a href="#main" class="block text-gray-700 hover:text-[#F28705] transition duration-300" title="About Us">About Us</a>
+                <a href="#detail1" class="block text-gray-700 hover:text-[#F28705] transition duration-300" title="Our Features">Features</a>
+                <a href="#galery" class="block text-gray-700 hover:text-[#F28705] transition duration-300" title="Gallery">Gallery</a>
+                <a href="#location" class="block text-gray-700 hover:text-[#F28705] transition duration-300" title="Location">Location</a>
+                <a href="#footer" class="block text-gray-700 hover:text-[#F28705] transition duration-300" title="Contact Us">Contact</a>
                 <div class="mt-6">
                     <a href="#visit"
                         class="bg-transparent border-2 border-[#F28705] hover:bg-[#F28705] hover:text-white text-[#F28705] py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
-                        data-aos="zoom-in" data-aos-duration="2000">
+                        data-aos="zoom-in" data-aos-duration="2000" title="Schedule a Visit">
                         Schedule a Visit
                     </a>
                 </div>
             </div>
         </div>
     </header>
-
-    <div
-        class="gtranslate_wrapper fixed bottom-20 right-10 z-50 bg-[#F28705] p-3 rounded-full shadow-lg cursor-pointer">
-
+    
+    <div class="gtranslate_wrapper fixed bottom-20 right-10 z-50 bg-[#F28705] p-3 rounded-full shadow-lg cursor-pointer object-cover">
+        <!-- Google Translate widget or other widget content can go here -->
     </div>
+    
     <!-- Hero Section -->
     <section id="main" class="relative h-screen">
         <!-- Image with overlay -->
-        <img data-src="public/assets/img/image_1.jpeg" alt="Complex"
-            class="absolute inset-0 w-full h-full object-cover" />
+        <img data-src="public/assets/img/fora 5.jpg" alt="Complexo"
+            class="absolute inset-0 w-full h-full object-cover transition-all duration-500 transform hover:scale-110" />
         <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for contrast -->
-
+    
         <!-- Content -->
         <div class="container mx-auto h-full flex flex-col justify-center text-center text-white px-6 sm:px-12 z-10">
             <!-- Title -->
-            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight drop-shadow-lg" data-aos="fade-up"
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight drop-shadow-lg tracking-tight transform transition duration-500 hover:scale-105" data-aos="fade-up"
                 data-aos-duration="2000">
                 The Best Deal of Your Life is Here
             </h1>
-
+    
             <!-- Price -->
             <p class="text-3xl sm:text-4xl font-bold text-[#F28705] drop-shadow-xl mt-4" data-aos="fade-up"
                 data-aos-duration="2000">
@@ -134,113 +144,86 @@
                     Negotiable
                 </span>
             </p>
-
+    
             <!-- Business Benefit -->
             <p class="text-lg sm:text-2xl mb-8 max-w-lg mx-auto opacity-90 mt-6" data-aos="fade-up"
                 data-aos-duration="2000">
-                Take advantage of the opportunity for an excellent financial return with a strategic investment. The
-                time to act is now!
+                Take advantage of the opportunity for an excellent financial return with a strategic investment. The time to act is now!
             </p>
-
+    
             <!-- Call to Action Buttons -->
-            <div class="flex justify-center gap-4 mt-6">
+            <div class="flex justify-center gap-6 mt-8">
                 <a href="#detail1"
-                    class="bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
+                    class="bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-10 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105 hover:shadow-xl"
                     data-aos="zoom-in" data-aos-duration="2000">
                     Discover More
                 </a>
                 <a href="#visit"
-                    class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
+                    class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-10 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105 hover:shadow-xl"
                     data-aos="zoom-in" data-aos-duration="2000">
                     Schedule a Visit
                 </a>
             </div>
         </div>
     </section>
+    
 
-
-    <section id="detail1" class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] text-white py-24"
-        id="about">
+    <section id="detail1" class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] text-white py-24" id="about">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <!-- Title -->
-            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate__animated animate__fadeInUp"
-                data-aos="fade-up" data-aos-duration="1000">Acquire the Krymas Complex</h2>
-            <p class="md:text-xl mb-8 leading-relaxed animate__animated animate__fadeInUp" data-aos="fade-up"
-                data-aos-duration="1200">
-                The Krymas Complex is a unique opportunity to acquire a luxury property in one of the most desirable
-                locations in the region, close to the beach. With modern design, unmatched comfort, and a strategic
-                location, it's the perfect investment for those seeking quality of life, exclusivity, and profitability.
-                Don’t miss the chance to secure your space in this paradise.
+            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1000">
+                Acquire the Krymas Accommodation
+            </h2>
+            <p class="md:text-xl mb-8 leading-relaxed animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-duration="1200">
+                The Krymas Accommodation is a unique opportunity to acquire a luxury property in one of the most desirable locations in the region, close to the beach. With modern design, unmatched comfort, and a strategic location, it's the perfect investment for those seeking quality of life, exclusivity, and profitability. Don’t miss the chance to secure your space in this paradise.
             </p>
-
-
+    
             <!-- Highlights -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-
-                <!-- Highlight 4 -->
-                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
-                    data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
-                        data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Security">
+    
+                <!-- Highlight 1 -->
+                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Segurança">
                     <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Security</h3>
                     <p class="text-gray-800">
-                        The Krymas Complex is situated in a peaceful and secure area, offering a serene environment
-                        where you can feel completely at ease.
+                        The Krymas Accommodation is situated in a peaceful and secure area, offering a serene environment where you can feel completely at ease.
                     </p>
                 </div>
-                <!-- Highlight 1 -->
-                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
-                    data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
-                        data-src="public/assets/img/image (16).jpeg" onclick="openModal(this)" alt="Comfort">
-                    <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Comfort</h3>
-                    <p class="text-gray-800">Every detail is designed to offer maximum comfort and well-being, making it
-                        the perfect investment for those seeking tranquility.</p>
-                </div>
                 <!-- Highlight 2 -->
-                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
-                    data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
-                        data-src="public/assets/img/image (15).jpeg" onclick="openModal(this)" alt="Elegance">
-                    <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Elegance</h3>
-                    <p class="text-gray-800">The Krymas Complex blends modern aesthetics with timeless charm, ensuring
-                        an investment that will never go out of style.</p>
+                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" data-src="public/assets/img/image (16).jpeg" onclick="openModal(this)" alt="Conforto">
+                    <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Comfort</h3>
+                    <p class="text-gray-800">Every detail is designed to offer maximum comfort and well-being, making it the perfect investment for those seeking tranquility.</p>
                 </div>
                 <!-- Highlight 3 -->
-                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
-                    data-aos="fade-up" data-aos-duration="1200">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer"
-                        data-src="public/assets/img/image (7).jpeg" onclick="openModal(this)" alt="Location">
-                    <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Location</h3>
-                    <p class="text-gray-800">With a prime location, close to the beach and major attractions, this is
-                        the perfect place to invest and secure your future.</p>
+                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" data-src="public/assets/img/image (15).jpeg" onclick="openModal(this)" alt="Elegância">
+                    <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Elegance</h3>
+                    <p class="text-gray-800">The Krymas Accommodation blends modern aesthetics with timeless charm, ensuring an investment that will never go out of style.</p>
                 </div>
-
-
-
+                <!-- Highlight 4 -->
+                <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-duration="1200">
+                    <img class="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" data-src="public/assets/img/fora.jpg" onclick="openModal(this)" alt="Localização">
+                    <h3 class="text-2xl font-semibold text-[#F28705] mb-3">Location</h3>
+                    <p class="text-gray-800">With a prime location, close to the beach and major attractions, this is the perfect place to invest and secure your future.</p>
+                </div>
+    
             </div>
-
+    
             <!-- Video -->
-            <div class="w-full mt-12">
-                <iframe class="w-full rounded-lg h-[400px]"
-                    src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2F100068009168215%2Fvideos%2F949058749629017%2F&show_text=false&width=560&t=0"
-                    width="560" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    allowFullScreen="true"></iframe>
-            </div>
-
+            <!-- <div class="w-full mt-12">
+                <iframe class="w-full rounded-lg h-[400px]" src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2F100068009168215%2Fvideos%2F949058749629017%2F&show_text=false&width=560&t=0" width="560" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div> -->
+    
             <!-- Button -->
             <div class="mt-8">
-                <a href="#visit"
-                    class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105"
-                    data-aos="zoom-in" data-aos-duration="2000">
+                <a href="#visit" class="bg-transparent border-2 border-white hover:bg-white hover:text-[#F28705] text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105" data-aos="zoom-in" data-aos-duration="2000">
                     Schedule a Visit
                 </a>
             </div>
         </div>
     </section>
-
+    
 
     <section id="detail2" class="bg-white py-24" id="caracteristicas">
         <div class="max-w-7xl mx-auto px-6 text-center">
@@ -256,131 +239,122 @@
                 <!-- Card 1 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image (10).jpeg" alt="T2 House"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/image (10).jpeg" alt="Casa T2"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">4 T2 Houses</h3>
                     <p class="text-white">Each house Fully equipped with 2 bedrooms, offering modern architecture and
                         practicality for everyday living.</p>
                 </div>
-
+    
                 <!-- Card 2 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
                     <img data-src="public/assets/img/image (11).jpeg" alt="Suites"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3 ">3 Fully Equipped Suites</h3>
                     <p class="text-white">Spacious suites with premium finishes and modern amenities for maximum
                         comfort.</p>
                 </div>
-
+    
                 <!-- Card 3 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Swimming Pool"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/image (12).jpeg" alt="Piscina"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">7 Suites</h3>
-                    <p class="text-white">Additional suites ready to be customized to suit your needs and preferences.
-                    </p>
+                    <p class="text-white">Additional suites ready to be customized to suit your needs and preferences.</p>
                 </div>
-
+    
                 <!-- Card 4 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Parking"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/piscina.jpg" alt="Estacionamento"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">Private Pool</h3>
                     <p class="text-white">Enjoy ultimate relaxation in the private pool, offering complete privacy and
                         luxury.</p>
                 </div>
-
+    
                 <!-- Card 5 -->
-                <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
+                <!-- <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Gourmet Space"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/image_1.jpeg" alt="Espaço Gourmet"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">Gourmet Space</h3>
                     <p class="text-white">An ideal space to gather friends and family, with a fully equipped kitchen and
                         an outdoor area to enjoy meals al fresco.</p>
-                </div>
-
+                </div> -->
+    
                 <!-- Card 6 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
-                    <h3 class="text-xl font-semibold text-white mb-3">Exclusive Bar</h3>
-                    <p class="text-white">A fully equipped bar, perfect for hosting social gatherings and celebrations.
-                    </p>
+                    <img data-src="public/assets/img/image (1).jpeg" alt="Bar"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
+                    <h3 class="text-xl font-semibold text-white mb-3">Bar</h3>
+                    <p class="text-white">A fully equipped bar, perfect for hosting social gatherings and celebrations.</p>
                 </div>
-
-
+    
                 <!-- Card 7 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
-                    <h3 class="text-xl font-semibold text-white mb-3"> Office</h3>
+                    <img data-src="public/assets/img/escritorio.jpg" alt="Escritório"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
+                    <h3 class="text-xl font-semibold text-white mb-3">Office</h3>
                     <p class="text-white">A dedicated office space designed for productivity and focus, equipped with
                         all essential features.</p>
                 </div>
-
-
+    
                 <!-- Card 8 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/image_1.jpeg" alt="Cozinha"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">Kitchen</h3>
                     <p class="text-white">A fully equipped kitchen designed for culinary excellence and convenience.</p>
                 </div>
-
-
+    
                 <!-- Card 9 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/image_1.jpeg" alt="Lavanderia"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">Laundry</h3>
                     <p class="text-white">A modern laundry room with all the essential resources to simplify your daily
                         routines.</p>
                 </div>
-
+    
                 <!-- Card 10 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/armazem.jpg" alt="Armazém"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">Warehouse</h3>
                     <p class="text-white">Ample storage space to meet your organizational needs.</p>
                 </div>
-
-
-
-                <!-- Card 10 -->
+    
+                <!-- Card 11 -->
                 <div class="bg-gradient-to-r from-[#F29F05] via-[#F28705] to-[#F29F05] p-8 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300"
                     data-aos="fade-up" data-aos-duration="1200">
-                    <img data-src="public/assets/img/image_1.jpeg" alt="Laundry"
-                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer"
-                        onclick="openModal(this)">
+                    <img data-src="public/assets/img/image (23).jpeg" alt="Quarto de Funcionários"
+                        class="w-24 h-24 mb-6 mx-auto rounded-full border-4 border-white shadow-lg cursor-pointer object-cover"
+                        onclick="openModal(this)" loading="lazy" width="96" height="96">
                     <h3 class="text-xl font-semibold text-white mb-3">Staff Room</h3>
-                    <p class="text-white">Dedicated accommodation for staff members, ensuring comfort and convenience.
-                    </p>
+                    <p class="text-white">Dedicated accommodation for staff members, ensuring comfort and convenience.</p>
                 </div>
             </div>
         </div>
     </section>
-
-
+    
     <section id="galery" class="bg-[#F28705] text-white py-24">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-extrabold text-white pb-5" data-aos="fade-up" data-aos-duration="1000">
@@ -394,27 +368,226 @@
             <!-- Swiper Container -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                             <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/fora.jpg" onclick="openModal(this)" alt="Exterior do complexo"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/fora 2.jpg" onclick="openModal(this)" alt="Vista exterior do complexo"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/fora 4.jpg" onclick="openModal(this)" alt="Ambiente exterior"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/piscina.jpg" onclick="openModal(this)" alt="Piscina do complexo"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/piscina 2.jpg" onclick="openModal(this)" alt="Piscina do complexo vista lateral"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/piscina 3.jpg" onclick="openModal(this)" alt="Piscina à noite"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (1).jpeg" onclick="openModal(this)" alt="Detalhes do ambiente no complexo"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (3).jpeg" onclick="openModal(this)" alt="Ambiente interno do complexo"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (4).jpeg" onclick="openModal(this)" alt="Ambiente de relaxamento"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (5).jpeg" onclick="openModal(this)" alt="Ambiente relaxante"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (6).jpeg" onclick="openModal(this)" alt="Ambiente moderno"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (7).jpeg" onclick="openModal(this)" alt="Ambiente luxuoso"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (8).jpeg" onclick="openModal(this)" alt="Vista do interior"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (9).jpeg" onclick="openModal(this)" alt="Ambiente sofisticado"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (10).jpeg" onclick="openModal(this)" alt="Ambiente elegante"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (11).jpeg" onclick="openModal(this)" alt="Detalhes do design"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (12).jpeg" onclick="openModal(this)" alt="Ambiente amplo"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (13).jpeg" onclick="openModal(this)" alt="Ambiente luxuoso"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (14).jpeg" onclick="openModal(this)" alt="Vista do design moderno"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (15).jpeg" onclick="openModal(this)" alt="Ambiente espaçoso"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (16).jpeg" onclick="openModal(this)" alt="Ambiente arejado"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (17).jpeg" onclick="openModal(this)" alt="Decoração moderna"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (18).jpeg" onclick="openModal(this)" alt="Ambiente confortável"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (19).jpeg" onclick="openModal(this)" alt="Detalhes de interiores"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (20).jpeg" onclick="openModal(this)" alt="Ambiente bem iluminado"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (21).jpeg" onclick="openModal(this)" alt="Ambiente acolhedor"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="relative w-full h-64 rounded-md">
+                        <img data-src="public/assets/img/image (22).jpeg" onclick="openModal(this)" alt="Ambiente requintado"
+                            class="w-full h-full object-cover cursor-pointer rounded-md" />
+                    </div>
+                </div>
+
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="relative w-full h-64">
-                            <img data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 1"
-                                class="w-full h-full object-cover cursor-pointer" />
+                        <div class="relative w-full h-64 rounded-md">
+                            <img data-src="public/assets/img/image (23).jpeg" onclick="openModal(this)" alt="Imagem 1"
+                                class="w-full h-full object-cover cursor-pointer rounded-md" />
                         </div>
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="relative w-full h-64">
-                            <img data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 2"
-                                class="w-full h-full object-cover cursor-pointer" />
+                        <div class="relative w-full h-64 rounded-md">
+                            <img data-src="public/assets/img/image (24).jpeg" onclick="openModal(this)" alt="Imagem 2"
+                                class="w-full h-full object-cover cursor-pointer rounded-md" />
                         </div>
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="relative w-full h-64">
-                            <img data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Imagem 3"
-                                class="w-full h-full object-cover cursor-pointer" />
+                        <div class="relative w-full h-64 rounded-md">
+                            <img data-src="public/assets/img/escritorio.jpg" onclick="openModal(this)" alt="Imagem 3"
+                                class="w-full h-full object-cover cursor-pointer rounded-md" />
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Adicionar os controles de navegação -->
@@ -453,6 +626,7 @@
         </div>
     </div>
 
+
     <section class="py-24" data-aos="fade-up" data-aos-duration="1000" id="location">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-extrabold text-[#F28705] mb-8">Location</h2>
@@ -460,7 +634,7 @@
                 data-aos-duration="1200">
                 Conveniently located with easy access to key areas, amenities, and popular attractions.
             </p>
-
+    
             <div class="lg:flex lg:space-x-12">
                 <!-- Interactive Map -->
                 <div class="lg:w-1/2 mb-12 lg:mb-0">
@@ -470,10 +644,10 @@
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.9868221587324!2d32.87627337111015!3d-26.840790568048774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee48f3d58d68fc7%3A0xcb4d88e63276f60c!2sKrymas%20Accommodation!5e0!3m2!1spt-PT!2smz!4v1736844327031!5m2!1spt-PT!2smz"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            referrerpolicy="no-referrer-when-downgrade" title="Mapa do Google do Krymas Accommodation"></iframe>
                     </div>
                 </div>
-
+    
                 <!-- Location Description -->
                 <div class="lg:w-1/2 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1000">
                     <p class="text-lg text-gray-700 mb-4">
@@ -502,12 +676,13 @@
             </div>
         </div>
     </section>
+    
 
     <section class="bg-[#F28705] py-24" id="cta-final">
         <div class="max-w-7xl mx-auto px-6">
             <!-- Container Flex -->
             <div class="flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0 gap-4">
-
+    
                 <!-- Formulário de Contato -->
                 <div id="visit" class="w-full lg:w-1/2 text-center text-white">
                     <h2 class="md:text-5xl font-extrabold mb-6" data-aos="fade-up" data-aos-duration="1000">
@@ -517,139 +692,153 @@
                         Ready to make your dream a reality? Fill out the form below, or get in touch with us for more
                         details and to schedule a visit.
                     </p>
-
+    
                     <!-- Formulário de Contato -->
-<form id="contact-form" action="#" method="POST"
-class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out"
-data-aos="fade-up" data-aos-duration="1200">
-<div class="mb-6">
-    <label for="name" class="block text-sm font-semibold text-gray-700">Full Name</label>
-    <input type="text" id="name" name="name" required
-        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
-        placeholder="John Doe">
-</div>
-
-<div class="mb-6">
-    <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
-    <input type="email" id="email" name="email" required
-        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
-        placeholder="example@email.com">
-</div>
-
-<div class="mb-6">
-    <label for="phone" class="block text-sm font-semibold text-gray-700">Phone Number</label>
-    <input type="tel" id="phone" name="phone" required
-        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
-        placeholder="(123) 456-7890">
-</div>
-
-<div class="mb-6">
-    <label for="message" class="block text-sm font-semibold text-gray-700">Your Message</label>
-    <textarea id="message" name="message" rows="4" required
-        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
-        placeholder="Write your message here..."></textarea>
-</div>
-
-<div class=" w-full">
-    <button type="submit"
-        class="w-96 md:w-96 bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-6 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105">
-        Submit 
-    </button>
-</div>
-</form>
-
-
-
+                    <form id="contact-form" action="#" method="POST"
+                        class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out"
+                        data-aos="fade-up" data-aos-duration="1200">
+                        <div class="mb-6">
+                            <label for="name" class="block text-sm font-semibold text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+                                placeholder="Jordan Zita">
+                        </div>
+    
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+                                placeholder="example@email.com">
+                        </div>
+    
+                        <div class="mb-6">
+                            <label for="phone" class="block text-sm font-semibold text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required
+                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+                                placeholder="(123) 456-7890">
+                        </div>
+    
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-semibold text-gray-700">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F29F05] transition duration-300 ease-in-out text-gray-700"
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+    
+                        <div class=" w-full">
+                            <button type="submit"
+                                class="w-96 md:w-96 bg-[#F28705] hover:bg-[#F28705] text-white py-3 px-6 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+    
                 </div>
-
-
+    
                 <!-- Imagem do Complexo -->
                 <div class="w-full lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-up"
                     data-aos-duration="1200">
                     <div class="relative w-full h-96 lg:h-auto">
-                        <img data-src="public/assets/img/image_1.jpeg" onclick="openModal(this)" alt="Complexo"
+                        <img data-src="public/assets/img/fora 5.jpg" onclick="openModal(this)" alt="Imagem do complexo, visão geral externa"
                             class="w-full h-full object-cover rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl duration-300 ease-in-out cursor-pointer">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
+    
 
     <footer id="footer" class="bg-[#262626] text-white py-24">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+            <div class="flex flex-col md:flex-row justify-between">
                 <!-- Informações de Contato -->
                 <div class="space-y-6">
                     <h3 class="text-3xl font-semibold text-[#F29F05]" data-aos="fade-up" data-aos-duration="1200">
                         Contact Us</h3>
-                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">
+                    <address class="not-italic text-lg" data-aos="fade-up" data-aos-duration="1200">
                         Main Street, Ponta do Ouro,
-                        Mozambique</p>
-                        <br>
-                  
-                    <a href="tel:+258878296482" class="text-lg hover:underline" data-aos="fade-up" data-aos-duration="1200" target="_blank">📞 (+258) 87
-                        829 6482</a>
-                        <br>
-                        <br>
-                    <a href="mailto: Krymasaccommodation258@gmail.com" class="text-lg hover:underline" data-aos="fade-up"
-                        data-aos-duration="1200">📧 Krymasaccommodation258@gmail.com</a>
+                        Mozambique
+                    </address>
+                    <br>
+
+                    <a href="tel:258878296482" class="text-lg hover:underline hover:text-green-500" data-aos="fade-up"
+                        data-aos-duration="1200" target="_blank" title="Telefone para nós">📞 (+258) 87 829 6482</a>
+                    <br>
+                    <br>
+
+                    <a href="https://wa.me/258846793694?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
+                        target="_blank" data-aos="fade-up" data-aos-duration="1200"
+                        class="text-lg hover:underline hover:text-green-500" title="Contacte-nos pelo WhatsApp"
+                        aria-label="WhatsApp">
+                        📱 Contact us on WhatsApp
+                    </a>
+                    <br>
+                    <br>
+                    <a href="mailto:cremildosiquissani@gmail.com" class="text-lg hover:underline hover:text-green-500"
+                        target="_blank" data-aos="fade-up" data-aos-duration="1200" title="Envie-nos um e-mail">📧
+                        cremildosiquissani@gmail.com</a>
                 </div>
 
                 <!-- Redes Sociais -->
                 <div class="space-y-6">
                     <h3 class="text-3xl font-semibold text-[#F29F05]" data-aos="fade-up" data-aos-duration="1200">
-                        Follow Us</h3>
+
+                        Follow us</h3>
                     <div class="flex justify-start space-x-8">
                         <a href="https://facebook.com" data-aos="fade-up" data-aos-duration="1200" target="_blank"
-                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
+                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110"
+                            title="Siga-nos no Facebook" aria-label="Facebook">
                             <i class="bi bi-facebook text-4xl"></i>
                         </a>
                         <a href="https://instagram.com" data-aos="fade-up" data-aos-duration="1200" target="_blank"
-                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
+                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110"
+                            title="Siga-nos no Instagram" aria-label="Instagram">
                             <i class="bi bi-instagram text-4xl"></i>
                         </a>
                         <a href="https://linkedin.com" data-aos="fade-up" data-aos-duration="1200" target="_blank"
-                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
+                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110"
+                            title="Siga-nos no LinkedIn" aria-label="LinkedIn">
                             <i class="bi bi-linkedin text-4xl"></i>
                         </a>
                         <a href="https://twitter.com" data-aos="fade-up" data-aos-duration="1200" target="_blank"
-                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110">
+                            class="text-white hover:text-indigo-400 transition-all duration-300 transform hover:scale-110"
+                            title="Siga-nos no Twitter" aria-label="Twitter">
                             <i class="bi bi-twitter text-4xl"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Links Legais -->
-                
-
                 <!-- Assinatura -->
-                <div class="text-center lg:text-right mt-6 lg:mt-0">
-                    <h3 class="text-3xl font-semibold text-[#F29F05]" data-aos="fade-up" data-aos-duration="1200">Get
-                        in Touch</h3>
-                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">Schedule a visit today and discover why the Krymas Complex is your ideal investment</p>
-                    <a href="#visit"
+                <div class="md:text-center lg:text-right mt-6 lg:mt-0 max-w-64">
+                    <h3 class="text-3xl font-semibold text-[#F29F05]" data-aos="fade-up" data-aos-duration="1200">
+                        Get in touch</h3>
+                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1200">
+                        Schedule a visit today and discover why the Krymas Accommodation is your ideal investment
+                    </p>
+                    <a target="_blank"
+                        href="https://wa.me/258846793694?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
                         class="mt-4 inline-block px-8 py-3 bg-[#F29F05] text-white rounded-lg text-lg font-semibold transition-all duration-300 hover:bg-[#F28705]"
-                        data-aos="fade-up" data-aos-duration="1200">Contact Us</a>
+                        data-aos="fade-up" data-aos-duration="1200" title="Entre em contacto pelo WhatsApp">Contact
+                        Us</a>
                 </div>
             </div>
 
             <!-- Copyright -->
             <div class="mt-12 text-center text-sm opacity-70" data-aos="fade-up" data-aos-duration="1200">
-                <p id="terms"></p>
+                <p id="terms">&copy; 2025 Krymas Accommodation. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-var terms=document.getElementById('terms');
-var year=new Date().getFullYear();
-terms.innerHTML=
 
-'&copy; ' + year + ' Complexo Ponta do Ouro. All Rights Reserved. <br>' +
-'Created by Adriano Luís Dimande';
-;
+    <script>
+        var terms = document.getElementById('terms');
+        var year = new Date().getFullYear();
+        terms.innerHTML =
+
+            '&copy; ' + year + ' Complexo Ponta do Ouro. All Rights Reserved. <br>' +
+            'Created by Adriano Luís Dimande';
+        ;
     </script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -712,24 +901,24 @@ terms.innerHTML=
 
     </script>
 
-<script type="text/javascript">
-    // Initialize EmailJS
-    emailjs.init("muV2bm4Y9GbE7maIP");
-    
-    // Add event listener to form submission
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-    
-        // Use EmailJS to send the form data
-        emailjs.sendForm('service_jl6em4k', 'template_7q0tp4k', this)
-            .then(function(response) {
-                console.log('Success:', response);
-                alert("Your message has been sent successfully!");
-            }, function(error) {
-                console.log('Error:', error);
-                alert("Something went wrong. Please try again later.");
-            });
-    });
+    <script type="text/javascript">
+        // Initialize EmailJS
+        emailjs.init("muV2bm4Y9GbE7maIP");
+
+        // Add event listener to form submission
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Use EmailJS to send the form data
+            emailjs.sendForm('service_jl6em4k', 'template_7q0tp4k', this)
+                .then(function (response) {
+                    console.log('Success:', response);
+                    alert("Your message has been sent successfully!");
+                }, function (error) {
+                    console.log('Error:', error);
+                    alert("Something went wrong. Please try again later.");
+                });
+        });
     </script>
 
 </body>
